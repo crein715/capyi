@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UASerials Plugin Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            color: #eee;
+        }
+        h1 { color: #ffd700; }
+        .code {
+            background: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .success { color: #4ade80; }
+        .error { color: #f87171; }
+        button {
+            background: #ffd700;
+            color: #1a1a2e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        button:hover { background: #ffed4a; }
+        #log {
+            background: #0f0f23;
+            padding: 15px;
+            border-radius: 8px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .log-entry { margin: 5px 0; border-bottom: 1px solid #333; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🎬 UASerials Plugin Test</h1>
+    
+    <h2>Plugin URLs</h2>
+    <div class="code">
+        <strong>GitHub Pages (after enabled):</strong><br>
+        https://crein715.github.io/capyi/uaserials.js
+    </div>
+    
+    <h2>Test Functions</h2>
+    <button onclick="testSearch()">🔍 Test Search</button>
+    <button onclick="testMainPage()">📺 Test Main Page</button>
+    <button onclick="testDetails()">📄 Test Details</button>
+    <button onclick="clearLog()">🗑️ Clear Log</button>
+    
+    <h2>Log</h2>
+    <div id="log"></div>
+
+    <script>
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry ' + type;
+            entry.innerHTML = `<span class="${type}">[${new Date().toLocaleTimeString()}]</span> ${msg}`;
+            logDiv.appendChild(entry);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function clearLog() {
+            document.getElementById('log').innerHTML = '';
+        }
+
+        // Mock Lampa objects for testing
+        window.Lampa = {
+            Reguest: function() {
+                this.clear = function() {};
+                this.silent = function(url, success, error, post, params) {
+                    log('Fetching: ' + url);
+                    
+                    const fetchParams = {
+                        method: params?.type || 'GET',
+                        headers: params?.headers || {}
+                    };
+                    
+                    if (params?.type === 'POST' && params?.data) {
+                        fetchParams.body = new URLSearchParams(params.data);
+                        fetchParams.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+                    }
+                    
+                    fetch(url, fetchParams)
+                        .then(r => r.text())
+                        .then(html => {
+                            log('Response received: ' + html.length + ' chars', 'success');
+                            success(html);
+                        })
+                        .catch(e => {
+                            log('Error: ' + e.message, 'error');
+                            if (error) error(e);
+                        });
+                };
+            },
+            Lang: { translate: (k) => k },
+            Noty: { show: (m) => log('Noty: ' + m) },
+            Storage: { get: () => '', set: () => {} }
+        };
+
+        // Load plugin
+        const script = document.createElement('script');
+        script.src = 'uaserials.js?' + Date.now();
+        script.onload = () => log('Plugin loaded!', 'success');
+        script.onerror = () => log('Failed to load plugin', 'error');
+        document.head.appendChild(script);
+
+        function testSearch() {
+            log('Testing search for "Мандалорець"...');
+            if (typeof UASerials !== 'undefined') {
+                UASerials.search('Мандалорець', function(results) {
+                    log('Found ' + results.length + ' results', 'success');
+                    results.slice(0, 5).forEach(r => {
+                        log('  → ' + r.title + ' | ' + r.url);
+                    });
+                }, function(e) {
+                    log('Search error: ' + e, 'error');
+                });
+            } else {
+                log('UASerials not loaded yet', 'error');
+            }
+        }
+
+        function testMainPage() {
+            log('Testing main page (series)...');
+            if (typeof UASerials !== 'undefined') {
+                UASerials.getMainPage('series', 1, function(results) {
+                    log('Found ' + results.length + ' items', 'success');
+                    results.slice(0, 5).forEach(r => {
+                        log('  → ' + r.title);
+                    });
+                }, function(e) {
+                    log('Main page error: ' + e, 'error');
+                });
+            } else {
+                log('UASerials not loaded yet', 'error');
+            }
+        }
+
+        function testDetails() {
+            log('Testing details page...');
+            if (typeof UASerials !== 'undefined') {
+                // First search to get a URL
+                UASerials.search('Друзі', function(results) {
+                    if (results.length > 0) {
+                        log('Getting details for: ' + results[0].title);
+                        UASerials.getDetails(results[0].url, function(details) {
+                            log('Title: ' + details.title, 'success');
+                            log('Year: ' + details.year);
+                            log('Genres: ' + details.genres.join(', '));
+                            log('Has encrypted data: ' + (details.encryptedData ? 'Yes' : 'No'));
+                            
+                            if (details.encryptedData) {
+                                log('Testing decryption...');
+                                UASerials.decryptAES(details.encryptedData, function(decrypted) {
+                                    log('Decryption successful!', 'success');
+                                    try {
+                                        const data = JSON.parse(decrypted.replace(/\\/g, ''));
+                                        log('Parsed data: ' + JSON.stringify(data).slice(0, 200) + '...');
+                                    } catch(e) {
+                                        log('Parse error: ' + e.message, 'error');
+                                    }
+                                }, function(e) {
+                                    log('Decryption error: ' + e, 'error');
+                                });
+                            }
+                        }, function(e) {
+                            log('Details error: ' + e, 'error');
+                        });
+                    } else {
+                        log('No results found', 'error');
+                    }
+                }, function(e) {
+                    log('Search error: ' + e, 'error');
+                });
+            } else {
+                log('UASerials not loaded yet', 'error');
+            }
+        }
+
+        log('Test page loaded. Click buttons to test plugin functions.');
+    </script>
+</body>
+</html>
