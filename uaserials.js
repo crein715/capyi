@@ -4,7 +4,7 @@
     var network = new Lampa.Reguest();
     var MAIN_URL = 'https://uaserials.com';
     var PROXY = 'https://corsproxy.io/?';
-    var AES_KEY = '297796CCB81D2551';
+    var AES_KEY = '297796CCB81D25512';
 
     var source_titles = {
         uaserials: 'UASerials'
@@ -24,9 +24,8 @@
 
     function decryptData(data) {
         try {
-            var salt = hexToWordArray(data.salt);
-            var iv = hexToWordArray(data.iv);
-            var ciphertext = CryptoJS.enc.Base64.parse(data.ciphertext);
+            var salt = CryptoJS.enc.Hex.parse(data.salt);
+            var iv = CryptoJS.enc.Hex.parse(data.iv);
             var iterations = data.iterations || 999;
 
             var key = CryptoJS.PBKDF2(AES_KEY, salt, {
@@ -35,11 +34,7 @@
                 hasher: CryptoJS.algo.SHA512
             });
 
-            var decrypted = CryptoJS.AES.decrypt(
-                { ciphertext: ciphertext },
-                key,
-                { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
-            );
+            var decrypted = CryptoJS.AES.decrypt(data.ciphertext, key, { iv: iv });
 
             var result = decrypted.toString(CryptoJS.enc.Utf8);
             result = result.replace(/\0+$/, '').trim();
