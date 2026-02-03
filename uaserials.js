@@ -543,34 +543,18 @@
                     });
 
                     var render = e.object.activity.render();
-                    var placed = false;
+                    var buttonsContainer = render.find('.full-start__buttons');
                     
-                    var viewOnline = render.find('.view--online').first();
-                    if (viewOnline.length) {
-                        viewOnline.before(btn);
-                        placed = true;
-                    }
+                    var iconButtons = buttonsContainer.children().filter(function() {
+                        var $this = $(this);
+                        var span = $this.find('span');
+                        return span.length === 0 || span.text().trim() === '';
+                    });
                     
-                    if (!placed) {
-                        var viewTorrent = render.find('.view--torrent').first();
-                        if (viewTorrent.length) {
-                            viewTorrent.before(btn);
-                            placed = true;
-                        }
-                    }
-                    
-                    if (!placed) {
-                        var textButtons = render.find('.full-start__button').filter(function() {
-                            return $(this).find('span').length > 0;
-                        });
-                        if (textButtons.length) {
-                            textButtons.first().before(btn);
-                            placed = true;
-                        }
-                    }
-                    
-                    if (!placed) {
-                        render.find('.full-start__buttons').append(btn);
+                    if (iconButtons.length) {
+                        iconButtons.last().after(btn);
+                    } else {
+                        buttonsContainer.prepend(btn);
                     }
                 }
             });

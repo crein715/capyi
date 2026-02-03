@@ -224,6 +224,73 @@ https://crein715.github.io/capyi/uaserials.js
 - **CryptoJS** — бібліотека для шифрування/дешифрування
 - **DevTools** — дебаг JavaScript в браузері
 
+## Поради для розробки
+
+### Створюйте тестові скрипти для дешифрування
+
+**Проблема**: При розробці часто потрібно перевіряти структуру зашифрованих даних. Дешифрування в самому плагіні незручне для дебагу.
+
+**Рішення**: Створіть окремий Node.js скрипт для тестування:
+
+```javascript
+// decrypt-test.js
+const crypto = require('crypto');
+const https = require('https');
+
+const AES_KEY = '297796CCB81D25512';
+
+function decryptData(data) {
+    const salt = Buffer.from(data.salt, 'hex');
+    const iv = Buffer.from(data.iv, 'hex');
+    const key = crypto.pbkdf2Sync(AES_KEY, salt, 999, 32, 'sha512');
+    
+    const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
+    let decrypted = decipher.update(data.ciphertext, 'base64', 'utf8');
+    decrypted += decipher.final('utf8');
+    return JSON.parse(decrypted);
+}
+
+// Використання: node decrypt-test.js https://uaserials.com/123-movie.html
+```
+
+**Переваги**:
+1. Швидке тестування без перезавантаження Lampa
+2. Легше дебажити помилки в консолі
+3. Можна зберігати результати для аналізу
+4. Простіше адаптувати під нові алгоритми
+
+### HAR файли для аналізу
+
+При аналізі нового сайту корисно зберегти HAR файл:
+1. Відкрити DevTools (F12) → Network
+2. Завантажити сторінку та відтворити відео
+3. Права кнопка → "Save all as HAR"
+
+HAR покаже всі запити включаючи API endpoints та потоки відео.
+
+### Структура tortuga.tw URLs
+
+Розшифровані дані містять посилання типу `tortuga.tw/vod/{ID}`. Ці сторінки потребують JavaScript для резолвінгу.
+
+**Реальний m3u8 URL**:
+```
+https://calypso.tortuga.tw/content/stream/{type}/{filename}/hls/{quality}/index.m3u8
+```
+
+Приклад:
+```
+https://calypso.tortuga.tw/content/stream/serials/peaky.blinders.s01e01.ci.mvo_103079/hls/1080/index.m3u8
+```
+
+Структура filename:
+- `peaky.blinders` — slug серіалу (транслітерація)
+- `s01e01` — сезон та епізод
+- `ci` — кодек/якість
+- `mvo` — тип озвучки
+- `103079` — VOD ID
+
+**Важливо**: Mapping від VOD ID до повного шляху недоступний через простий HTTP запит. Потрібен headless browser або серверний проксі.
+
 ## Контакти
 
 Репозиторій: https://github.com/crein715/capyi
