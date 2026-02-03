@@ -542,11 +542,35 @@
                         });
                     });
 
-                    var buttons = e.object.activity.render().find('.full-start__button').first();
-                    if (buttons.length) {
-                        buttons.before(btn);
-                    } else {
-                        e.object.activity.render().find('.full-start__buttons').prepend(btn);
+                    var render = e.object.activity.render();
+                    var placed = false;
+                    
+                    var viewOnline = render.find('.view--online').first();
+                    if (viewOnline.length) {
+                        viewOnline.before(btn);
+                        placed = true;
+                    }
+                    
+                    if (!placed) {
+                        var viewTorrent = render.find('.view--torrent').first();
+                        if (viewTorrent.length) {
+                            viewTorrent.before(btn);
+                            placed = true;
+                        }
+                    }
+                    
+                    if (!placed) {
+                        var textButtons = render.find('.full-start__button').filter(function() {
+                            return $(this).find('span').length > 0;
+                        });
+                        if (textButtons.length) {
+                            textButtons.first().before(btn);
+                            placed = true;
+                        }
+                    }
+                    
+                    if (!placed) {
+                        render.find('.full-start__buttons').append(btn);
                     }
                 }
             });
