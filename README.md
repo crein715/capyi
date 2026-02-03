@@ -45,3 +45,4 @@ https://crein715.github.io/capyi/uaserials-loader.js
 ## Ліцензія
 
 MIT
+
