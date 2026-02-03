@@ -65,13 +65,12 @@
             network.silent(proxyUrl(url), function (str) {
                 _this.parseSearch(str);
             }, function (a, c) {
-                Lampa.Noty.show('Помилка завантаження');
+                Lampa.Noty.show('Помилка пошуку');
                 _this.empty();
             }, false, {dataType: 'text'});
         };
 
         this.parseSearch = function (str) {
-            var _this = this;
             var parser = new DOMParser();
             var doc = parser.parseFromString(str, 'text/html');
             var results = doc.querySelectorAll('.short-item');
@@ -154,9 +153,9 @@
             network.silent(proxyUrl(item.url), function (str) {
                 Lampa.Modal.close();
                 _this.parseDetails(str, item);
-            }, function () {
+            }, function (a, c) {
                 Lampa.Modal.close();
-                Lampa.Noty.show('Помилка завантаження');
+                Lampa.Noty.show('Помилка: не вдалося завантажити сторінку');
                 Lampa.Controller.toggle('content');
             }, false, {dataType: 'text'});
         };
@@ -165,28 +164,41 @@
             var _this = this;
             var parser = new DOMParser();
             var doc = parser.parseFromString(str, 'text/html');
+            
             var playerControl = doc.querySelector('player-control');
+            if (!playerControl) {
+                playerControl = doc.querySelector('[data-tag1]');
+            }
 
             if (!playerControl) {
-                Lampa.Noty.show('Плеєр не знайдено');
+                Lampa.Noty.show('Плеєр не знайдено на сторінці');
                 Lampa.Controller.toggle('content');
                 return;
             }
 
             var dataTag = playerControl.getAttribute('data-tag1');
             if (!dataTag) {
-                Lampa.Noty.show('Дані плеєра не знайдено');
+                Lampa.Noty.show('Атрибут data-tag1 не знайдено');
                 Lampa.Controller.toggle('content');
                 return;
             }
 
+            var encrypted;
             try {
-                var encrypted = JSON.parse(dataTag);
-                _this.decrypt(encrypted, item);
+                encrypted = JSON.parse(dataTag);
             } catch (e) {
-                Lampa.Noty.show('Помилка парсингу');
+                Lampa.Noty.show('Помилка JSON: ' + e.message);
                 Lampa.Controller.toggle('content');
+                return;
             }
+
+            if (!encrypted.ciphertext || !encrypted.salt || !encrypted.iv) {
+                Lampa.Noty.show('Невірний формат шифрування');
+                Lampa.Controller.toggle('content');
+                return;
+            }
+
+            _this.decrypt(encrypted, item);
         };
 
         this.decrypt = function (data, item) {
@@ -201,50 +213,61 @@
                 return new Uint8Array(bytes);
             }
 
+            var salt = hexToBytes(data.salt);
+            var iv = hexToBytes(data.iv);
+            var ct;
+            
             try {
-                var salt = hexToBytes(data.salt);
-                var iv = hexToBytes(data.iv);
-                var ct = Uint8Array.from(atob(data.ciphertext), function(c) { return c.charCodeAt(0); });
-                var iterations = data.iterations || 999;
-
-                crypto.subtle.importKey('raw', new TextEncoder().encode(AES_KEY), 'PBKDF2', false, ['deriveKey'])
-                .then(function(key) {
-                    return crypto.subtle.deriveKey(
-                        {name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-512'},
-                        key,
-                        {name: 'AES-CBC', length: 256},
-                        false,
-                        ['decrypt']
-                    );
-                })
-                .then(function(key) {
-                    return crypto.subtle.decrypt({name: 'AES-CBC', iv: iv}, key, ct);
-                })
-                .then(function(dec) {
-                    var result = new TextDecoder().decode(dec);
-                    result = result.replace(/\0+$/, '').trim();
-                    var idx = result.lastIndexOf(']');
-                    if (idx > 0) result = result.substring(0, idx + 1);
-                    result = result.replace(/\\/g, '');
-                    
-                    var json = JSON.parse(result);
-                    _this.showPlayer(json, item);
-                })
-                .catch(function(e) {
-                    Lampa.Noty.show('Помилка розшифрування');
-                    Lampa.Controller.toggle('content');
-                });
-            } catch (e) {
-                Lampa.Noty.show('Помилка');
+                ct = Uint8Array.from(atob(data.ciphertext), function(c) { return c.charCodeAt(0); });
+            } catch(e) {
+                Lampa.Noty.show('Помилка Base64: ' + e.message);
                 Lampa.Controller.toggle('content');
+                return;
             }
+
+            var iterations = data.iterations || 999;
+
+            crypto.subtle.importKey('raw', new TextEncoder().encode(AES_KEY), 'PBKDF2', false, ['deriveKey'])
+            .then(function(key) {
+                return crypto.subtle.deriveKey(
+                    {name: 'PBKDF2', salt: salt, iterations: iterations, hash: 'SHA-512'},
+                    key,
+                    {name: 'AES-CBC', length: 256},
+                    false,
+                    ['decrypt']
+                );
+            })
+            .then(function(key) {
+                return crypto.subtle.decrypt({name: 'AES-CBC', iv: iv}, key, ct);
+            })
+            .then(function(dec) {
+                var result = new TextDecoder().decode(dec);
+                result = result.replace(/\0+$/, '').trim();
+                var idx = result.lastIndexOf(']');
+                if (idx > 0) result = result.substring(0, idx + 1);
+                result = result.replace(/\\/g, '');
+                
+                var json;
+                try {
+                    json = JSON.parse(result);
+                } catch(e) {
+                    Lampa.Noty.show('Помилка парсингу JSON після розшифрування');
+                    Lampa.Controller.toggle('content');
+                    return;
+                }
+                _this.showPlayer(json, item);
+            })
+            .catch(function(e) {
+                Lampa.Noty.show('Помилка розшифрування: ' + (e.message || e));
+                Lampa.Controller.toggle('content');
+            });
         };
 
         this.showPlayer = function (data, item) {
             var _this = this;
             
             if (!data || !data.length) {
-                Lampa.Noty.show('Немає даних');
+                Lampa.Noty.show('Порожні дані плеєра');
                 Lampa.Controller.toggle('content');
                 return;
             }
@@ -255,15 +278,25 @@
                 var select_items = [];
                 
                 info.seasons.forEach(function(season, si) {
-                    season.episodes.forEach(function(ep, ei) {
-                        ep.sounds.forEach(function(sound) {
-                            select_items.push({
-                                title: (season.title || 'Сезон ' + (si+1)) + ' / ' + (ep.title || 'Серія ' + (ei+1)) + ' / ' + sound.title,
-                                url: sound.url
-                            });
+                    if (season.episodes) {
+                        season.episodes.forEach(function(ep, ei) {
+                            if (ep.sounds) {
+                                ep.sounds.forEach(function(sound) {
+                                    select_items.push({
+                                        title: (season.title || 'Сезон ' + (si+1)) + ' / ' + (ep.title || 'Серія ' + (ei+1)) + ' / ' + (sound.title || 'Озвучка'),
+                                        url: sound.url
+                                    });
+                                });
+                            }
                         });
-                    });
+                    }
                 });
+
+                if (select_items.length === 0) {
+                    Lampa.Noty.show('Серії не знайдено');
+                    Lampa.Controller.toggle('content');
+                    return;
+                }
 
                 Lampa.Select.show({
                     title: item.title,
@@ -278,16 +311,27 @@
             } else if (info.url) {
                 this.play({url: info.url, title: item.title}, item);
             } else {
-                Lampa.Noty.show('Немає відео');
+                Lampa.Noty.show('Невідомий формат даних плеєра');
                 Lampa.Controller.toggle('content');
             }
         };
 
         this.play = function (a, item) {
+            Lampa.Modal.open({
+                title: '',
+                html: $('<div class="broadcast__text" style="padding:1.5em">Отримання відео...</div>'),
+                onBack: function () {
+                    Lampa.Modal.close();
+                    Lampa.Controller.toggle('content');
+                }
+            });
+
             network.clear();
             network.timeout(20000);
 
             network.silent(proxyUrl(a.url), function (str) {
+                Lampa.Modal.close();
+                
                 var m = str.match(/file\s*:\s*["']([^"']+)["']/);
                 
                 if (m && m[1]) {
@@ -297,7 +341,11 @@
                         try {
                             var decoded = atob(url.replace(/=+$/, ''));
                             url = decoded.split('').reverse().join('');
-                        } catch(e) {}
+                        } catch(e) {
+                            Lampa.Noty.show('Помилка декодування URL');
+                            Lampa.Controller.toggle('content');
+                            return;
+                        }
                     }
 
                     if (url && url.startsWith('http')) {
@@ -311,15 +359,16 @@
                             url: url
                         }]);
                     } else {
-                        Lampa.Noty.show('Невірний URL відео');
+                        Lampa.Noty.show('URL відео невірний: ' + url.substring(0, 50));
                         Lampa.Controller.toggle('content');
                     }
                 } else {
-                    Lampa.Noty.show('Відео не знайдено');
+                    Lampa.Noty.show('file: не знайдено в плеєрі');
                     Lampa.Controller.toggle('content');
                 }
-            }, function () {
-                Lampa.Noty.show('Помилка завантаження відео');
+            }, function (a, c) {
+                Lampa.Modal.close();
+                Lampa.Noty.show('Помилка завантаження плеєра');
                 Lampa.Controller.toggle('content');
             }, false, {dataType: 'text'});
         };
