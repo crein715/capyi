@@ -102,6 +102,25 @@ console.log('AES Key:', key);
 
 ## Типові проблеми
 
+### "Відео не знайдено" (tortuga.tw)
+
+**Причина**: tortuga.tw URLs (напр. `https://tortuga.tw/vod/123456`) потребують JavaScript для отримання реального m3u8 URL.
+
+**Технічні деталі**:
+- tortuga.tw сторінка виконує API запит для отримання відео URL
+- Реальне відео на CDN: `https://calypso.tortuga.tw/content/stream/...`
+- CORS проксі не виконує JavaScript
+
+**Можливі рішення**:
+1. Використати headless browser (Puppeteer) на сервері
+2. Створити власний API proxy що резолвить URLs
+3. Знайти альтернативний спосіб отримання m3u8
+
+**Тимчасовий workaround**:
+- Відкрити відео на uaserials.com в браузері
+- В DevTools (F12) → Network → знайти `.m3u8` запит
+- Скопіювати URL і вставити в Lampa вручну
+
 ### "Помилка розшифрування"
 
 **Причина**: Змінився AES ключ на сайті.
