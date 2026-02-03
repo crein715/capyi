@@ -542,11 +542,11 @@
                         });
                     });
 
-                    var online_button = e.object.activity.render().find('.view--online');
-                    if (online_button.length) {
-                        online_button.after(btn);
+                    var buttons = e.object.activity.render().find('.full-start__button').first();
+                    if (buttons.length) {
+                        buttons.before(btn);
                     } else {
-                        e.object.activity.render().find('.view--torrent').after(btn);
+                        e.object.activity.render().find('.full-start__buttons').prepend(btn);
                     }
                 }
             });
