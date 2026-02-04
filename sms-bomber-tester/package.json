@@ -1,0 +1,21 @@
+{
+  "name": "sms-bomber-tester",
+  "version": "1.0.0",
+  "description": "SMS/Call bomber testing tool for Ukrainian numbers - for research and defense purposes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --dry-run",
+    "analyze": "node analyzer.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^11.1.0",
+    "https-proxy-agent": "^7.0.2",
+    "node-fetch": "^3.3.2",
+    "user-agents": "^1.1.0"
+  }
+}

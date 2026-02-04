@@ -1,0 +1,698 @@
+{
+  "phone": "380506648076",
+  "timestamp": "2026-02-04T10:18:32.472Z",
+  "results": {
+    "success": [
+      {
+        "name": "Motozilla",
+        "status": 200,
+        "time": 1576,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Helsi Login",
+        "status": 202,
+        "time": 980,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Helsi Send",
+        "status": 200,
+        "time": 543,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Multiplex",
+        "status": 200,
+        "time": 705,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Smaki Maki",
+        "status": 200,
+        "time": 1138,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Vodafone Reg",
+        "status": 200,
+        "time": 2401,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "DeliveryFlower",
+        "status": 200,
+        "time": 626,
+        "type": "call",
+        "ok": true
+      },
+      {
+        "name": "Farsh",
+        "status": 200,
+        "time": 900,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "SMS Fly",
+        "status": 200,
+        "time": 1858,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Telegram",
+        "status": 200,
+        "time": 263,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "966.ua",
+        "status": 200,
+        "time": 423,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Sushiya",
+        "status": 200,
+        "time": 584,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Karuzo",
+        "status": 200,
+        "time": 615,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "InstaFood",
+        "status": 200,
+        "time": 505,
+        "type": "call",
+        "ok": true
+      },
+      {
+        "name": "Monobank Link",
+        "status": 200,
+        "time": 622,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Kasta",
+        "status": 200,
+        "time": 450,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Multiplex Auth",
+        "status": 200,
+        "time": 751,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "3040 Taxi",
+        "status": 200,
+        "time": 988,
+        "type": "call",
+        "ok": true
+      },
+      {
+        "name": "Nova Poshta",
+        "status": 200,
+        "time": 648,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Rabota.ua",
+        "status": 200,
+        "time": 315,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Bus.ua",
+        "status": 200,
+        "time": 1121,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "Kyivgaz",
+        "status": 200,
+        "time": 749,
+        "type": "sms",
+        "ok": true
+      },
+      {
+        "name": "TikTok",
+        "status": 200,
+        "time": 46,
+        "type": "sms",
+        "ok": true
+      }
+    ],
+    "failed": [
+      {
+        "name": "PizzaDay",
+        "status": 403,
+        "time": 74,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Comfy",
+        "status": 404,
+        "time": 307,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Frutalina",
+        "status": 500,
+        "time": 474,
+        "type": "call",
+        "ok": false
+      },
+      {
+        "name": "Portmone",
+        "status": 401,
+        "time": 425,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Bi.ua",
+        "status": 400,
+        "time": 413,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "EasyPay",
+        "status": 400,
+        "time": 464,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Vilki Palki",
+        "status": 403,
+        "time": 40,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Pronto Pizza",
+        "status": 403,
+        "time": 105,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "City24",
+        "status": 403,
+        "time": 38,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "EasyPay Reg",
+        "status": 502,
+        "time": 1903,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "OnTaxi",
+        "status": 400,
+        "time": 381,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Uklon",
+        "status": 404,
+        "time": 853,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Moyo",
+        "status": 400,
+        "time": 756,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Planeta Kino",
+        "status": 523,
+        "time": 1792,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Rozetka",
+        "status": 404,
+        "time": 425,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "OLX Auth",
+        "status": 404,
+        "time": 402,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Allo",
+        "status": 403,
+        "time": 421,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Foxtrot",
+        "status": 404,
+        "time": 521,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Epicentr",
+        "status": 404,
+        "time": 346,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Silpo",
+        "status": 404,
+        "time": 305,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "ATB",
+        "status": 404,
+        "time": 828,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Fozzy",
+        "status": 404,
+        "time": 576,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Glovo",
+        "status": 404,
+        "time": 77,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Bolt",
+        "status": 404,
+        "time": 310,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Meest",
+        "status": 410,
+        "time": 343,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "PrivatBank",
+        "status": 404,
+        "time": 924,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Lifecell",
+        "status": 404,
+        "time": 1697,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Megogo",
+        "status": 406,
+        "time": 482,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Sweet.tv",
+        "status": 404,
+        "time": 1308,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Diia",
+        "status": 404,
+        "time": 507,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Work.ua",
+        "status": 404,
+        "time": 244,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Tickets.ua",
+        "status": 404,
+        "time": 435,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Proizd",
+        "status": 404,
+        "time": 432,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Lun",
+        "status": 404,
+        "time": 744,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "DomRia",
+        "status": 404,
+        "time": 1487,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "OLX Auto",
+        "status": 404,
+        "time": 324,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Doc.ua",
+        "status": 404,
+        "time": 430,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Apteka24",
+        "status": 401,
+        "time": 358,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Tabletki",
+        "status": 403,
+        "time": 29,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Kyivvodokanal",
+        "status": 405,
+        "time": 1014,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "KFC UA",
+        "status": 405,
+        "time": 349,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Dominos UA",
+        "status": 403,
+        "time": 134,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Puzata Hata",
+        "status": 405,
+        "time": 199,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Panda Pizza",
+        "status": 405,
+        "time": 223,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Panda Sushi",
+        "status": 405,
+        "time": 224,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "PUMB",
+        "status": 403,
+        "time": 298,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Oschadbank",
+        "status": 404,
+        "time": 494,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Raiffeisen",
+        "status": 404,
+        "time": 167,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "A-Bank",
+        "status": 404,
+        "time": 470,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Izibank",
+        "status": 405,
+        "time": 228,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Ukrgasbank",
+        "status": 401,
+        "time": 310,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "INGO",
+        "status": 404,
+        "time": 4407,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Viber",
+        "status": 403,
+        "time": 15,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "WhatsApp",
+        "status": 404,
+        "time": 10,
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Instagram",
+        "status": 404,
+        "time": 47,
+        "type": "sms",
+        "ok": false
+      }
+    ],
+    "error": [
+      {
+        "name": "Pomidoros",
+        "status": 0,
+        "error": "timeout of 15000ms exceeded",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Yoki",
+        "status": 0,
+        "error": "timeout of 15000ms exceeded",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Kinoland",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND api.kinoland.com.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Online.ua",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND secure.online.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Sportmaster",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND www.sportmaster.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Novus",
+        "status": 0,
+        "error": "unable to verify the first certificate; if the roo",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Raketa",
+        "status": 0,
+        "error": "write EPROTO 006DE06E79760000:error:0A000458:SSL r",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Justin",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND api.justin.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Kyivstar",
+        "status": 0,
+        "error": "timeout of 15000ms exceeded",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "DTEK",
+        "status": 0,
+        "error": "timeout of 15000ms exceeded",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "McDonald's UA",
+        "status": 0,
+        "error": "connect ECONNREFUSED 5.39.10.93:443",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Pizza Hut UA",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND www.pizzahut.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Celentano",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND celentano.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Murakami",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND murakami.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Sportbank",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND sportbank.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Credit Agricole",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND online.credit-agricole.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "OTP Bank",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND online.otpbank.com.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Pivdenny Bank",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND online.pivdennybank.ua",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "Arsenal",
+        "status": 0,
+        "error": "timeout of 15000ms exceeded",
+        "type": "sms",
+        "ok": false
+      },
+      {
+        "name": "HDI",
+        "status": 0,
+        "error": "getaddrinfo ENOTFOUND hdi.com.ua",
+        "type": "sms",
+        "ok": false
+      }
+    ]
+  }
+}

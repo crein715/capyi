@@ -1,0 +1,3085 @@
+{
+  "phone": "380506648076",
+  "timestamp": "2026-02-04T10:27:30.717Z",
+  "duration": 81238,
+  "summary": {
+    "total": 211,
+    "success": 41,
+    "failed": 21,
+    "timeout": 8,
+    "blocked": 32,
+    "unknown": 109
+  },
+  "results": {
+    "success": [
+      {
+        "service": "Helsi Login",
+        "source": "verified",
+        "category": "healthcare",
+        "type": "sms",
+        "url": "https://helsi.me/api/healthy/v2/accounts/login",
+        "status": 202,
+        "statusText": "Accepted",
+        "success": true,
+        "duration": 815,
+        "response": {
+          "isPermanentPassword": false,
+          "hasEmail": false,
+          "hasSecretQuestion": false,
+          "isRegistered": false,
+          "otpChannel": "PhoneCall",
+          "callId": "6d97c290-5cf4-4d51-a831-ee614922317f",
+          "accessConfirmationType": ""
+        },
+        "timestamp": "2026-02-04T10:26:10.295Z"
+      },
+      {
+        "service": "Helsi Send",
+        "source": "verified",
+        "category": "healthcare",
+        "type": "sms",
+        "url": "https://helsi.me/api/healthy/v2/accounts/send",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 710,
+        "response": {
+          "result": {
+            "name": "SMS_SEND_OK",
+            "description": "СМС отправлена"
+          },
+          "personalDataStatusWeb": "scientificId_119",
+          "isRegistered": false
+        },
+        "timestamp": "2026-02-04T10:26:10.210Z"
+      },
+      {
+        "service": "Multiplex",
+        "source": "verified",
+        "category": "entertainment",
+        "type": "sms",
+        "url": "https://auth2.multiplex.ua/login",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 620,
+        "response": {
+          "Message": "Використовуйте код отриманий раніше, він дійсний два тижня. Забагато спроб, зверніться до служби підтримки.",
+          "Recaptcha": true,
+          "SmsStatus": false
+        },
+        "timestamp": "2026-02-04T10:26:10.122Z"
+      },
+      {
+        "service": "Vodafone Registration",
+        "source": "verified",
+        "category": "telecom",
+        "type": "sms",
+        "url": "https://registration.vodafone.ua/api/v1/process/smsCode",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 2184,
+        "response": "",
+        "timestamp": "2026-02-04T10:26:11.687Z"
+      },
+      {
+        "service": "Telegram",
+        "source": "verified",
+        "category": "messenger",
+        "type": "sms",
+        "url": "https://my.telegram.org/auth/send_password",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 383,
+        "response": "Sorry, too many tries. Please try again later.",
+        "timestamp": "2026-02-04T10:26:09.889Z"
+      },
+      {
+        "service": "966.ua",
+        "source": "verified",
+        "category": "ecommerce",
+        "type": "sms",
+        "url": "https://966.ua/esputnik/getUserByPhone",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 651,
+        "response": {
+          "status": "success",
+          "data": {
+            "status": "error",
+            "user": null
+          }
+        },
+        "timestamp": "2026-02-04T10:26:10.158Z"
+      },
+      {
+        "service": "Sushiya",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://www.sushiya.ua/api/v1/user/auth",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 994,
+        "response": {
+          "status": "operation_success",
+          "message": "",
+          "data": null
+        },
+        "timestamp": "2026-02-04T10:26:10.503Z"
+      },
+      {
+        "service": "SMS Fly",
+        "source": "verified",
+        "category": "sms_service",
+        "type": "sms",
+        "url": "https://sms-fly.ua/registration/confirm/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1948,
+        "response": "<!DOCTYPE html>\n<html lang=\"uk\">\n<head>\n<title>SMS-розсилки | Масова розсилка SMS в Україні | SMS-fly™</title>\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MXRDWRZ');</script>\n<!...",
+        "timestamp": "2026-02-04T10:26:11.461Z"
+      },
+      {
+        "service": "Motozilla",
+        "source": "verified",
+        "category": "ecommerce",
+        "type": "sms",
+        "url": "https://motozilla.com.ua/signup/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1764,
+        "response": "<!DOCTYPE html><html lang=\"ru\"><head ><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no\"><meta http-equiv=\"x-ua-compatible\" content=\"IE=edge\"><meta name=\"verify-reformal\" content=\"30b357a78d118bc564209ee7\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://motozilla.com.ua/signup/\" /><link rel=\"alternate\" hreflang=\"uk-UA\" href=\"https://motozilla.com.ua/ua/signup/\" /><title>Ре...",
+        "timestamp": "2026-02-04T10:26:11.277Z"
+      },
+      {
+        "service": "DeliveryFlower Callback",
+        "source": "verified",
+        "category": "callback",
+        "type": "call",
+        "url": "https://deliveryflower.com.ua/pravku/call.php",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 637,
+        "response": "<head/><font style=\"color:white; font-size:16pt;\">Тимчасово послуга недоступна, наші контакти:<br> +38 ( 096) 71 77 908, admin@deliveryflower.com.ua <br> Вибачте за незручності. </font><br>\n<br><a onclick=\"show1('none');return false;\" href=\"javascript:window.scrollTo(0, 0);\" id=dostavka class=to-butt1 href=\"void(0);\">\n<span>ЗАКРИТИ ВІКНО</span><span1></span1><span2 style=\"margin:0 auto;\"><script data-pagespeed-no-defer type=\"text/javascript\">(function(){for(var g=\"function\"==typeof Object.define...",
+        "timestamp": "2026-02-04T10:26:12.426Z"
+      },
+      {
+        "service": "Karuzo",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://karuzo.ua/index.php?route=callback/callback/send",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 666,
+        "response": {
+          "msg": "Код Captcha не збігся!",
+          "id": "error"
+        },
+        "timestamp": "2026-02-04T10:26:12.456Z"
+      },
+      {
+        "service": "Smaki Maki",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://smaki-maki.com/wp-admin/admin-ajax.php",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1753,
+        "response": "<!DOCTYPE html>\n<!--[if IE]><![endif]-->\n<!--[if IE 8 ]><html dir=\"ltr\" lang=\"uk\" class=\"ie8\"><![endif]-->\n<!--[if IE 9 ]><html dir=\"ltr\" lang=\"uk\" class=\"ie9\"><![endif]-->\n<!--[if (gt IE 9)|!(IE)]><!-->\n<html dir=\"ltr\" lang=\"uk\">\n<!--<![endif]-->\n<head>\n    <meta charset=\"UTF-8\" />\n        <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>Суші Львів -...",
+        "timestamp": "2026-02-04T10:26:13.543Z"
+      },
+      {
+        "service": "Farsh",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://farsh.in.ua/wp-admin/admin-ajax.php",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1119,
+        "response": "Виникла технічна помилка",
+        "timestamp": "2026-02-04T10:26:12.910Z"
+      },
+      {
+        "service": "InstaFood Callback",
+        "source": "verified",
+        "category": "callback",
+        "type": "call",
+        "url": "https://instafood.com.ua/ajax/callback-form",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 672,
+        "response": [
+          {
+            "command": "removeClass",
+            "target": "#forms-callback-application-name",
+            "data": "uk-form-danger"
+          },
+          {
+            "command": "removeClass",
+            "target": "#forms-callback-application-phone",
+            "data": "uk-form-danger"
+          },
+          {
+            "command": "addClass",
+            "target": "#forms-callback-application-phone",
+            "data": "uk-form-danger"
+          }
+        ],
+        "timestamp": "2026-02-04T10:26:12.464Z"
+      },
+      {
+        "service": "Monobank Link",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.monobank.com.ua/api/mobapplink/send",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1353,
+        "response": "",
+        "timestamp": "2026-02-04T10:26:13.146Z"
+      },
+      {
+        "service": "Kasta",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://kasta.ua/api/v2/login/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1351,
+        "response": {
+          "status": "ok"
+        },
+        "timestamp": "2026-02-04T10:26:13.144Z"
+      },
+      {
+        "service": "Multiplex Auth",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://auth.multiplex.ua/login",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 995,
+        "response": {
+          "Message": "Використовуйте код отриманий раніше, він дійсний два тижня. Забагато спроб, зверніться до служби підтримки.",
+          "Recaptcha": true,
+          "SmsStatus": false
+        },
+        "timestamp": "2026-02-04T10:26:12.789Z"
+      },
+      {
+        "service": "3040 Taxi",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://3040.com.ua/taxi-ordering",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1623,
+        "response": "<!DOCTYPE html>\n<html>\n<head>\n<!--[if IE]><![endif]-->\n<link rel=\"dns-prefetch\" href=\"//languages\" />\n<link rel=\"preconnect\" href=\"public://languages\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<script src=\"https://www.google.com/recaptcha/api.js?hl=ru\" async=\"async\" defer=\"defer\"></script>\n<link rel=\"shortcut icon\" href=\"https://3040.com.ua/sites/all/themes/pc_3040/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n<meta name=\"viewport\" content=\"width=device-width, in...",
+        "timestamp": "2026-02-04T10:26:13.418Z"
+      },
+      {
+        "service": "Nova Poshta",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.novaposhta.ua/v2.0/json/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 835,
+        "response": {
+          "success": false,
+          "data": [],
+          "errors": [
+            "User is undefined"
+          ],
+          "warnings": [],
+          "info": [],
+          "messageCodes": [],
+          "errorCodes": [
+            "20000101582"
+          ],
+          "warningCodes": [],
+          "infoCodes": []
+        },
+        "timestamp": "2026-02-04T10:26:24.744Z"
+      },
+      {
+        "service": "Rabota.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://rabota.ua/api/auth/send-code",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 979,
+        "response": "<!DOCTYPE html><html lang=\"uk\"><head>\n    <script>\n      var dataLayer = window.dataLayer\n      dataLayer = dataLayer || []\n      dataLayer.push({\n        'gtm.start': new Date().getTime(),\n        event: 'gtm.js'\n      })\n    </script>\n    <link rel=\"preconnect\" href=\"https://rabota.com.ua\">\n    <link rel=\"preconnect\" href=\"https://cf-rabota.com.ua/\">\n\n    <link rel=\"preload\" href=\"https://images.cf-rabota.com.ua/2017/05/fonts/graphik/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" cross...",
+        "timestamp": "2026-02-04T10:26:37.001Z"
+      },
+      {
+        "service": "Bus.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://bus.ua/api/auth/phone",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1466,
+        "response": "<!DOCTYPE html><html lang=\"uk\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/f38cbdce5c337e8f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-9ae90a08b9b83296.js\"/><script src=\"/_next/static/chunks/fd9d1056-78a864725f6a113a.js\" async=\"\"></script><script src=\"/_next/static/chunks/2117-e2a1a06be4f21fbb.js\" async=\"\"></script><script s...",
+        "timestamp": "2026-02-04T10:26:37.493Z"
+      },
+      {
+        "service": "TikTok",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.tiktok.com/api/auth/register",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 70,
+        "response": {
+          "log_pb": {
+            "impr_id": "202602041027000DBC9D72FB85D306893C"
+          },
+          "status_code": 0,
+          "status_msg": "url doesn't match"
+        },
+        "timestamp": "2026-02-04T10:27:00.334Z"
+      },
+      {
+        "service": "F.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://f.ua/api/auth/sms",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1739,
+        "response": "<!doctype html>\n<html data-n-head-ssr style=\"--main-font-size: 13px; --vh: 1vh;\" lang=\"uk-UA\" data-n-head=\"%7B%22style%22:%7B%22ssr%22:%22--main-font-size:%2013px;%20--vh:%201vh;%22%7D,%22lang%22:%7B%22ssr%22:%22uk-UA%22%7D%7D\">\n\t<head >\n\t\t<meta data-n-head=\"ssr\" charset=\"utf-8\"><meta data-n-head=\"ssr\" http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><meta data-n-head=\"ssr\" name=\"color\" content=\"#1060c1\"><meta data-n-head=\"ssr\" name=\"google-site-verification\" content=\"E6KFhHP1BrQIny1daqKr1oYvQVkjp...",
+        "timestamp": "2026-02-04T10:27:02.014Z"
+      },
+      {
+        "service": "Binotel Callback",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://my.binotel.ua/api/4.0/stats/callback",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 970,
+        "response": {
+          "status": "error",
+          "code": 121,
+          "message": "Your key or secret is wrong"
+        },
+        "timestamp": "2026-02-04T10:27:13.354Z"
+      },
+      {
+        "service": "WhatsApp",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://v.whatsapp.net/v2/code",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 72,
+        "response": {
+          "param": "platform",
+          "reason": "bad_param",
+          "status": "fail"
+        },
+        "timestamp": "2026-02-04T10:27:12.459Z"
+      },
+      {
+        "service": "Facebook",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://m.facebook.com/ajax/login/help/identify.php",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 111,
+        "response": "<!DOCTYPE html><html lang=\"uk\"><head><title>Вас тимчасово заблоковано</title><meta name=\"viewport\" content=\"user-scalable=no,initial-scale=1,maximum-scale=1\" /><link href=\"https://static.xx.fbcdn.net/rsrc.php/y4/r/M6oWJ5INQpg.webp\" rel=\"shortcut icon\" sizes=\"196x196\" /><meta name=\"referrer\" content=\"origin-when-crossorigin\" id=\"meta_referrer\" /><link type=\"text/css\" rel=\"stylesheet\" href=\"https://static.xx.fbcdn.net/rsrc.php/v5/yx/l/0,cross/2lkMG0D8FYd.css\" data-bootloader-hash=\"TVmxP56\" crossor...",
+        "timestamp": "2026-02-04T10:27:12.499Z"
+      },
+      {
+        "service": "TikTok",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.tiktok.com/passport/web/send_code/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 96,
+        "response": {
+          "data": {
+            "captcha": "",
+            "desc_url": "",
+            "description": "Incorrect parameters",
+            "error_code": 4
+          },
+          "message": "error"
+        },
+        "timestamp": "2026-02-04T10:27:12.486Z"
+      },
+      {
+        "service": "Pinterest",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.pinterest.com/resource/PhoneResource/update/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 297,
+        "response": "<!DOCTYPE html><html class=\"uk\" lang=\"uk\"><head><meta charSet=\"utf-8\"/><meta content=\"width=device-width, initial-scale=1\" id=\"viewport\" name=\"viewport\"/><meta content=\"AobcHP0Riuw7qx+GcJ79jLXxzvz+vbYglMh02KHK8du7LYn9e2JLytVX5ABrS3PMoEeAZ5HxTvNW05uVVfni5gEAAAByeyJvcmlnaW4iOiJodHRwczovL3BpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkxvbmdBbmltYXRpb25GcmFtZVRpbWluZyIsImV4cGlyeSI6MTcxNjk0MDc5OSwiaXNTdWJkb21haW4iOnRydWV9\" http-equiv=\"origin-trial\"/><meta content=\"AmVInqn/1TOCw+OuhJQaIceqTQB6EIzsNHhZvTW5uvj...",
+        "timestamp": "2026-02-04T10:27:12.692Z"
+      },
+      {
+        "service": "VK",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.vk.com/method/auth.validatePhone",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 752,
+        "response": {
+          "error": {
+            "error_code": 8,
+            "error_msg": "Invalid request: v is required. Version param should be passed as \"v\". \"version\" param is invalid and not supported.",
+            "request_params": [
+              {
+                "key": "method",
+                "value": "auth.validatePhone"
+              },
+              {
+                "key": "oauth",
+                "value": "1"
+              },
+              {
+                "key": "phone",
+                "value": "380506648076"
+              }
+            ]
+          }
+        },
+        "timestamp": "2026-02-04T10:27:13.148Z"
+      },
+      {
+        "service": "Microsoft",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://login.live.com/GetOneTimeCode.srf",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 109,
+        "response": {
+          "State": 204
+        },
+        "timestamp": "2026-02-04T10:27:12.509Z"
+      },
+      {
+        "service": "Xbox",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://login.live.com/ppsecure/inlineconnect.srf",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 132,
+        "response": "<!-- Copyright (C) Microsoft Corporation. All rights reserved. --><!DOCTYPE html><!-- ServerInfo: PH1PEPF0001E2E7 16.0.30898.2 LocVer:0 --><!-- PreprocessInfo: CBA-0120_120247:64f3fd9ec000004, 2026-01-20T12:35:59.2977522-08:00 - Version: 16,0,30898,2 --><!-- RequestLCID: 1058, Market:UK-UA, PrefCountry: UA, LangLCID: 1058, LangISO: UK --><html dir=\"ltr\" lang=\"UK-UA\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=10\"/><link...",
+        "timestamp": "2026-02-04T10:27:12.534Z"
+      },
+      {
+        "service": "Badoo",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://badoo.com/signin/phone/send_code/",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 237,
+        "response": "<!DOCTYPE html> <!-- htmlmin:ignore --> <html class=\"no-js\"  lang=\"en-us\" dir=\"ltr\"> <head> <!-- Google Tag Manager --> <script nonce=\"g4xWLJYLWAGZPd2Gy0f+YpJICB4=\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push( {'gtm.start': new Date().getTime(),event:'gtm.js'} );var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]'); n&&j.setAttribute('nonce',n.nonce||n.getAttri...",
+        "timestamp": "2026-02-04T10:27:12.642Z"
+      },
+      {
+        "service": "Bumble",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://bumble.com/mwebapi.phtml",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 147,
+        "response": {
+          "$gpb": "badoo.bma.BadooMessage",
+          "message_type": 124,
+          "version": 0,
+          "message_id": 0,
+          "object_type": 74,
+          "body": [
+            {
+              "$gpb": "badoo.bma.MessageBody",
+              "server_error_message": {
+                "$gpb": "badoo.bma.ServerErrorMessage",
+                "error_code": "1",
+                "error_message": "Session not found (0030-3001-0051)",
+                "error_id": "0030-3001-0051",
+                "error_eta": 569,
+                "type": 0
+              },
+              "message_type": 124
+            }
+          ],
+          "responses_count": 1,
+          "vhost": ""
+        },
+        "timestamp": "2026-02-04T10:27:12.554Z"
+      },
+      {
+        "service": "eBay",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://signin.ebay.com/ws/eBayISAPI.dll",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 212,
+        "response": "<!DOCTYPE html><html lang=en><head><link rel=\"dns-prefetch\" href=\"//ir.ebaystatic.com\"><link rel=\"dns-prefetch\" href=\"//secureir.ebaystatic.com\"><link rel=\"dns-prefetch\" href=\"//i.ebayimg.com\"><link rel=\"dns-prefetch\" href=\"//rover.ebay.com\"><script>$ssgST=new Date().getTime();</script><meta name=viewport content=\"width=device-width, initial-scale=1.0\" charset=utf-8><title>Sign in or Register | eBay</title><!--M#s0-1-6-3--><!--M/--><!--M#s0-1-6-4--><script>\n    document.domain = \"ebay.com\";\n</sc...",
+        "timestamp": "2026-02-04T10:27:13.669Z"
+      },
+      {
+        "service": "AliExpress",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://passport.aliexpress.com/newlogin/sms/send",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 605,
+        "response": "\r\n<script>sessionStorage.x5referer = window.location.href;var url = window.location.protocol + \"//passport.aliexpress.com//newlogin/sms/send/_____tmd_____/punish?x5secdata=xfxL7oVJj0l8qtnmSyO2kYKPKDkWAR6a1ejswnxZEsoL6M-4GwtZ_LRX0kYHAudXJUSzBm8ztKpBrA3_7NAI9fZ3bn9XyXurHxRZprnZk8cL4dGxxOPplSBQUq8ce29VZVvwttXGXbDJBN9oCn0TB6wPFPNGLhVq1OfpHfZbsyLxhcgJCtS8dQnxQW0o7ASmPv9iOPzBmqmxAUo27zQmW2ibiy3q8xLju0PhbF8rtTg2XGLKJfKafHLLwi32FWqGrJbNGJIf5SF7BJvOHDeL2SIQ27HLy9I5Ba5X40qsdqZ5qMrXewFkV-wrlKp0JPFCX6we-cB_...",
+        "timestamp": "2026-02-04T10:27:14.062Z"
+      },
+      {
+        "service": "PayPal",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.paypal.com/signin/client",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 368,
+        "response": {
+          "htmlResponse": "<div id=\"signinCaptcha\" role=\"main\"><div id=\"ads-plugin\"><div class=\"container-fluid\" id=\"captcha-standalone\" data-app=\"authchallenge_response\" data-captcha-type=\"recaptcha\" data-disable-autosubmit=\"true\" data-json-captcha-flow=\"true\" data-jse=\"7f2bc55486d278d5d4f80b61abae3388\"  data-csrf=\"4WGqr4QdwJxp5xqScSFmfWQ6crnEStofz85Tg=\" data-empty-token-enum-val=\"STOP_SUBMISSION\" data-sessionid=\"aTdTD64gpbG8TgibSbOipAQ96yYcxIkh\" >   <div class=\"corral\" >          <div id=\"content\" class=\"contentContainer \"><header><p class=\"paypal-logo paypal-logo-monogram\">PayPal</p></header><h1 align=\"center\" class=\"headerText \">Security Challenge</h1><form  class=\"proceed\" action=\"/signin/client\" method=\"post\" name=\"challenge\" novalidate> <input type=\"hidden\" name=\"_recaptchaEnterpriseEnabled\" value=\"true\"/><input type=\"hidden\" name=\"_adsRecaptchaSiteKey\" value=\"6LeZ6egUAAAAAGwL8CjkDE8dcSw2DtvuVpdwTkwG\"/><iframe src=\"https://www.paypalobjects.com/web/res/182/9209c92cedac09705674e203b7f8d/recaptcha/recaptcha_v2.html?siteKey=6LeZ6egUAAAAAGwL8CjkDE8dcSw2DtvuVpdwTkwG&locale.x=en_US&country.x=UA&checkConnectionTimeout=10000&reCaptchaEnterpriseEnabled=true\" height=\"500\" width=\"100%25\" name=\"recaptcha\" align=\"middle\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups\"></iframe>   <div class=\"actions\"><button class=\"button actionContinue\"style=\"background-color:\"type=\"submit\"id=\"continue\"name=\"continue\"value=\"Continue\">Continue</button></div><input type=\"hidden\" name=\"_csrf\" value=\"4WGqr4QdwJxp5xqScSFmfWQ6crnEStofz85Tg=\" /><input type=\"hidden\" name=\"_requestId\" value=\"P4XHyhn1Bb7GRAOV86Dc8kRUMasHBNfBDMagByLQdxoNLv6oq9i76vhd-CuwE6UwAeHBaW4elq0bXvgHJ0yaceKPqKnR0tjSQXulv8bfA5lyw293_lfTpil20r1W1uJs\" /><input type=\"hidden\" name=\"_hash\" value=\"R/QQgDRRDrTfAtmv5ZtVnQI+2GvfkrECnnkUeoLC/yc=\" /><input type=\"hidden\" name=\"grc_eval_start_time_utc\" value=\"1770200833750\"/>    <input type=\"hidden\" id=\"session\" name=\"_sessionID\" value=\"aTdTD64gpbG8TgibSbOipAQ96yYcxIkh\"/><input type=\"hidden\" name=\"_adsChallengeType\" value=\"visual-challenge\" /><noscript><input type=\"hidden\" name=\"jsd\" value=\"9566811c5c8db76cfdfa6321860cc2dc\" /></noscript></form></div></div></div><script type=\"text/javascript\" data-name=\"authchallenge\" src=\"https://www.paypalobjects.com/web/res/182/9209c92cedac09705674e203b7f8d/js/authchallenge.js\" async></script></div><div id=\"ads-plugin-end\"></div></div><div class=\"transitioning hide\"></div>"
+        },
+        "timestamp": "2026-02-04T10:27:13.831Z"
+      },
+      {
+        "service": "Steam",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://store.steampowered.com/phone/add_ajaxop",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 145,
+        "response": {
+          "success": false,
+          "showResend": false,
+          "state": false,
+          "errorText": "",
+          "token": 0
+        },
+        "timestamp": "2026-02-04T10:27:14.490Z"
+      },
+      {
+        "service": "Zoom",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://us04web.zoom.us/signin/phone",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 403,
+        "response": {
+          "status": false,
+          "errorCode": 5502,
+          "errorMessage": "Incorrect code. Please check the code and try again.",
+          "result": null
+        },
+        "timestamp": "2026-02-04T10:27:26.861Z"
+      },
+      {
+        "service": "Slack",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://slack.com/api/users.sendPhoneVerificationCode",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 67,
+        "response": {
+          "ok": false,
+          "error": "unknown_method",
+          "req_method": "users.sendPhoneVerificationCode"
+        },
+        "timestamp": "2026-02-04T10:27:26.527Z"
+      },
+      {
+        "service": "LiveJasmin",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.livejasmin.com/api/phone/send",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1600,
+        "response": "        <!DOCTYPE html>\n        <html lang=\"en\"\n              xml:lang=\"en\">\n        <head>\n            <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<title>Live Sex Cams & Adult Chat with Webcam Girls | LiveJasmin</title>\n<meta name=\"msvalidate.01\" content=\"CCD166CA2225E52A35D0FD8495E1EE49\" />\n<meta name=\"node\" content=\"usnyc\" />\n<meta name=\"category\" content=\"girls\" />\n<meta name=\"Rating\" content=\"mature\" />\n<meta name=\"RATING\" content=\"RTA-5042-1996-1400-1577-RTA\" />\n<...",
+        "timestamp": "2026-02-04T10:27:28.069Z"
+      },
+      {
+        "service": "CallbackHunter",
+        "source": "international",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://callbackhunter.com/api/v1/callback",
+        "status": 200,
+        "statusText": "OK",
+        "success": true,
+        "duration": 1841,
+        "response": "\n\n\n<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" name=\"viewport\">\n\t\t\t<meta property=\"og:image\" content=\"https://www.uiscom.ru/upload/uf/559/i3r59ju902oygfqjtrgko6zgmij0lxf8.jpg\"/>\n\t\n\t\t\t<meta name=\"yandex-verification\" content=\"fdab24a52775066d\" />\n\t\n\t<!-- Favicon -->\n\t<link rel=\"shortcut icon\" href=\"/local/templates/uiscom/images/favicon/16x16.png\" type=\"image/png\">\n\t<link rel=\"icon\" type...",
+        "timestamp": "2026-02-04T10:27:30.716Z"
+      }
+    ],
+    "failed": [
+      {
+        "service": "GoGo Pizza",
+        "source": "verified",
+        "url": "https://gogo-pizza.eatery.club/site/v1/pre-login",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 149,
+        "error": "getaddrinfo ENOTFOUND gogo-pizza.eatery.club",
+        "timestamp": "2026-02-04T10:26:09.660Z"
+      },
+      {
+        "service": "Yaposhka",
+        "source": "verified",
+        "url": "https://yaposhka.com.ua/ua/brander_smsconfirm_customer/process/init/",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 881,
+        "error": "certificate has expired",
+        "timestamp": "2026-02-04T10:26:10.395Z"
+      },
+      {
+        "service": "Kinoland",
+        "source": "ukrainian",
+        "url": "https://api.kinoland.com.ua/api/v1/service/send-sms",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 981,
+        "error": "getaddrinfo ENOTFOUND api.kinoland.com.ua",
+        "timestamp": "2026-02-04T10:26:12.777Z"
+      },
+      {
+        "service": "Online.ua",
+        "source": "ukrainian",
+        "url": "https://secure.online.ua/ajax/check_phone/",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 969,
+        "error": "getaddrinfo ENOTFOUND secure.online.ua",
+        "timestamp": "2026-02-04T10:26:12.766Z"
+      },
+      {
+        "service": "Sportmaster",
+        "source": "ukrainian",
+        "url": "https://www.sportmaster.ua/?module=users&action=SendSMSReg",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 10,
+        "error": "getaddrinfo ENOTFOUND www.sportmaster.ua",
+        "timestamp": "2026-02-04T10:26:23.913Z"
+      },
+      {
+        "service": "Novus",
+        "source": "ukrainian",
+        "url": "https://novus.online/api/auth/send-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 346,
+        "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca",
+        "timestamp": "2026-02-04T10:26:24.254Z"
+      },
+      {
+        "service": "Raketa",
+        "source": "ukrainian",
+        "url": "https://api.raketa.app/api/v3/auth/request-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 229,
+        "error": "write EPROTO 008D03612B720000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:916:SSL alert number 112\n",
+        "timestamp": "2026-02-04T10:26:24.138Z"
+      },
+      {
+        "service": "Justin",
+        "source": "ukrainian",
+        "url": "https://api.justin.ua/client_api/v2/auth/send-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 243,
+        "error": "getaddrinfo ENOTFOUND api.justin.ua",
+        "timestamp": "2026-02-04T10:26:24.153Z"
+      },
+      {
+        "service": "McDonald's UA",
+        "source": "ukrainian",
+        "url": "https://www.mcdonalds.ua/api/auth/phone",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 540,
+        "error": "connect ECONNREFUSED 5.39.10.93:443",
+        "timestamp": "2026-02-04T10:26:36.580Z"
+      },
+      {
+        "service": "Pizza Hut UA",
+        "source": "ukrainian",
+        "url": "https://www.pizzahut.ua/api/auth/phone",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 641,
+        "error": "getaddrinfo ENOTFOUND www.pizzahut.ua",
+        "timestamp": "2026-02-04T10:26:36.683Z"
+      },
+      {
+        "service": "Celentano",
+        "source": "ukrainian",
+        "url": "https://celentano.ua/api/auth/send-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 109,
+        "error": "getaddrinfo ENOTFOUND celentano.ua",
+        "timestamp": "2026-02-04T10:26:48.261Z"
+      },
+      {
+        "service": "Murakami",
+        "source": "ukrainian",
+        "url": "https://murakami.ua/api/auth/phone",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 46,
+        "error": "getaddrinfo ENOTFOUND murakami.ua",
+        "timestamp": "2026-02-04T10:26:48.198Z"
+      },
+      {
+        "service": "Sportbank",
+        "source": "ukrainian",
+        "url": "https://sportbank.ua/api/auth/send-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 176,
+        "error": "getaddrinfo ENOTFOUND sportbank.ua",
+        "timestamp": "2026-02-04T10:26:48.331Z"
+      },
+      {
+        "service": "Credit Agricole",
+        "source": "ukrainian",
+        "url": "https://online.credit-agricole.ua/api/auth/sms",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 617,
+        "error": "getaddrinfo ENOTFOUND online.credit-agricole.ua",
+        "timestamp": "2026-02-04T10:26:48.774Z"
+      },
+      {
+        "service": "OTP Bank",
+        "source": "ukrainian",
+        "url": "https://online.otpbank.com.ua/api/auth/phone",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 844,
+        "error": "getaddrinfo ENOTFOUND online.otpbank.com.ua",
+        "timestamp": "2026-02-04T10:26:49.001Z"
+      },
+      {
+        "service": "Pivdenny Bank",
+        "source": "ukrainian",
+        "url": "https://online.pivdennybank.ua/api/auth/sms",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 811,
+        "error": "getaddrinfo ENOTFOUND online.pivdennybank.ua",
+        "timestamp": "2026-02-04T10:26:48.968Z"
+      },
+      {
+        "service": "HDI",
+        "source": "ukrainian",
+        "url": "https://hdi.com.ua/api/auth/send-code",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 885,
+        "error": "getaddrinfo ENOTFOUND hdi.com.ua",
+        "timestamp": "2026-02-04T10:26:49.043Z"
+      },
+      {
+        "service": "Ukrsibbank",
+        "source": "ukrainian",
+        "url": "https://my.ukrsibbank.com/api/auth/sendOTP",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 313,
+        "error": "getaddrinfo ENOTFOUND my.ukrsibbank.com",
+        "timestamp": "2026-02-04T10:27:00.580Z"
+      },
+      {
+        "service": "KFC",
+        "source": "international",
+        "url": "https://api.kfc.com/api/auth/phone/send",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 1000,
+        "error": "getaddrinfo ENOTFOUND api.kfc.com",
+        "timestamp": "2026-02-04T10:27:27.474Z"
+      },
+      {
+        "service": "Signal",
+        "source": "international",
+        "url": "https://textsecure-service.whispersystems.org/v1/verification/sms",
+        "type": "sms",
+        "status": "ERROR",
+        "success": false,
+        "duration": 17,
+        "error": "getaddrinfo ENOTFOUND textsecure-service.whispersystems.org",
+        "timestamp": "2026-02-04T10:27:28.890Z"
+      },
+      {
+        "service": "Jivosite Callback",
+        "source": "international",
+        "url": "https://node.jivosite.com/callback",
+        "type": "call",
+        "status": "ERROR",
+        "success": false,
+        "duration": 35,
+        "error": "getaddrinfo ENOTFOUND node.jivosite.com",
+        "timestamp": "2026-02-04T10:27:28.910Z"
+      }
+    ],
+    "timeout": [
+      {
+        "service": "Pomidoros",
+        "source": "verified",
+        "url": "https://pomidoros.com.ua/wp-content/themes/pomidoros/includes/register_login.php",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12011,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:26:23.802Z"
+      },
+      {
+        "service": "Yoki",
+        "source": "verified",
+        "url": "https://yoki.ua/lviv/wp-admin/admin-ajax.php",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12009,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:26:23.802Z"
+      },
+      {
+        "service": "Kyivstar",
+        "source": "ukrainian",
+        "url": "https://api.kyivstar.ua/otp/v1/otp/send",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12004,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:26:35.915Z"
+      },
+      {
+        "service": "DTEK",
+        "source": "ukrainian",
+        "url": "https://my.dtek.com/api/auth/phone",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12015,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:26:48.051Z"
+      },
+      {
+        "service": "Arsenal",
+        "source": "ukrainian",
+        "url": "https://arsenal.ua/api/auth/phone",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12003,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:27:00.161Z"
+      },
+      {
+        "service": "Lamoda UA",
+        "source": "ukrainian",
+        "url": "https://www.lamoda.ua/api/v1/customer/sendCode",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12016,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:27:12.283Z"
+      },
+      {
+        "service": "Flyuia",
+        "source": "ukrainian",
+        "url": "https://www.flyuia.com/api/auth/phone",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12012,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:27:12.283Z"
+      },
+      {
+        "service": "IVI",
+        "source": "international",
+        "url": "https://api.ivi.ru/mobileapi/user/register/phone/v6/",
+        "type": "sms",
+        "status": "TIMEOUT",
+        "success": false,
+        "duration": 12006,
+        "error": "Request timed out",
+        "timestamp": "2026-02-04T10:27:26.357Z"
+      }
+    ],
+    "blocked": [
+      {
+        "service": "Vodafone MW API",
+        "source": "verified",
+        "category": "telecom",
+        "type": "sms",
+        "url": "https://mw-api.vodafone.ua/otp/api/one-time-password/secured",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 512,
+        "response": {
+          "error": "error.403",
+          "error_description": "Forbidden"
+        },
+        "timestamp": "2026-02-04T10:26:10.016Z"
+      },
+      {
+        "service": "PizzaDay",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://pizzaday.eatery.club/site/v1/pre-login",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 143,
+        "response": "",
+        "timestamp": "2026-02-04T10:26:09.652Z"
+      },
+      {
+        "service": "Vilki Palki",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://vilki-palki.od.ua/api/secret/generate?lang=ukrainian",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 194,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:09.706Z"
+      },
+      {
+        "service": "Pronto Pizza",
+        "source": "verified",
+        "category": "food",
+        "type": "sms",
+        "url": "https://prontopizza.ua/wp-admin/admin-ajax.php",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 370,
+        "response": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" ...",
+        "timestamp": "2026-02-04T10:26:12.162Z"
+      },
+      {
+        "service": "City24",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://city24.ua/personalaccount/account/registration",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 436,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:12.230Z"
+      },
+      {
+        "service": "Rozetka",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://xl-catalog-api.rozetka.com.ua/v4/user/login/phone",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 30,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:23.934Z"
+      },
+      {
+        "service": "Allo",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://allo.ua/ua/customer/account/sendcode/",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 44,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:23.949Z"
+      },
+      {
+        "service": "ATB",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.atbmarket.com/api/v1/user/phone/send-code",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 45,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:23.952Z"
+      },
+      {
+        "service": "Tabletki",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://tabletki.ua/api/auth/phone",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 72,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:36.106Z"
+      },
+      {
+        "service": "Dominos UA",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.dominos.ua/api/auth/send-code",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 47,
+        "response": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\n<TITLE>ERROR: The request could not be satisfied</TITLE>\n</HEAD><BODY>\n<H1>403 ERROR</H1>\n<H2>The request could not be satisfied.</H2>\n<HR noshade size=\"1px\">\nThis distribution is not configured to allow the HTTP request method that was used for this request. The distribution supports only cachable requests.\nWe...",
+        "timestamp": "2026-02-04T10:26:48.197Z"
+      },
+      {
+        "service": "PUMB",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://online.pumb.ua/api/auth/otp",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 1226,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:49.379Z"
+      },
+      {
+        "service": "Raiffeisen",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://online.raiffeisen.ua/api/auth/send-otp",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 189,
+        "response": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" ...",
+        "timestamp": "2026-02-04T10:26:48.343Z"
+      },
+      {
+        "service": "INGO",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://ingo.ua/api/auth/phone",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 922,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:26:49.080Z"
+      },
+      {
+        "service": "Viber",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.viber.com/api/auth/sms",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 902,
+        "response": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;viber&#46;com&#47;api&#47;auth&#47;sms\" on this server.<P>\nReference&#32;&#35;18&#46;a624c317&#46;1770200809&#46;301c5478\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;a624c317&#46;1770200809&#46;301c5478</P>\n</BODY>\n</HTML>\n",
+        "timestamp": "2026-02-04T10:26:49.061Z"
+      },
+      {
+        "service": "Ukrzaliznytsia",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://booking.uz.gov.ua/api/v1/auth/sendOtp",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 175,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:27:00.444Z"
+      },
+      {
+        "service": "Eva UA",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://eva.ua/api/customer/sendSms",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 347,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:27:00.620Z"
+      },
+      {
+        "service": "Zakaz.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://zakaz.ua/api/auth/phone/send",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 363,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helve...",
+        "timestamp": "2026-02-04T10:27:00.638Z"
+      },
+      {
+        "service": "Delivery Auto",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://delivery-auto.com/api/auth/phone",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 589,
+        "response": "<!DOCTYPE html>\r\n<html lang=\"uk\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>Головна - Delivery</title>\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />\r\n    <!-- Fonts -->\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">\r\n</head>\r\n\r\n<body>\r\n\t<style>\r\n\t\tbody {\r\n\t\t\tbackground-color: #FFD500;\r\n\t\t}\r\n\t\t\r\n\t\tli {\r\n\t\t\tmargin-bottom: 3px;\r\n\t\t}\r\n\t\t\r\n\t\t.message {...",
+        "timestamp": "2026-02-04T10:27:00.865Z"
+      },
+      {
+        "service": "LinkedIn",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.linkedin.com/checkpoint/rp/request-password-reset-submit",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 161,
+        "response": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <title>Unauthorized</title>\n        <style>\n            html, body, pre {\n                margin: 0;\n                padding: 0;\n                font-family: Monaco, 'Lucida Console', monospace;\n                background: #ECECEC;\n            }\n            h1 {\n                margin: 0;\n                background: #333;\n                padding: 20px 45px;\n                color: #fff;\n                text-shadow: 1px 1px 1px rgba(0,0,0,.3);\n  ...",
+        "timestamp": "2026-02-04T10:27:12.553Z"
+      },
+      {
+        "service": "YouTube",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://accounts.google.com/_/lookup/accountlookup",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 73,
+        "response": ")]}'\n\n[[\"er\",null,null,null,null,403,null,null,null,7]]",
+        "timestamp": "2026-02-04T10:27:12.472Z"
+      },
+      {
+        "service": "OkCupid",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.okcupid.com/1/apitun/phone/send_code",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 25,
+        "response": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" ...",
+        "timestamp": "2026-02-04T10:27:13.480Z"
+      },
+      {
+        "service": "Hinge",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://prod-api.hingeaws.net/auth/sms",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 105,
+        "response": {
+          "reason": "Device platform not supported: "
+        },
+        "timestamp": "2026-02-04T10:27:13.561Z"
+      },
+      {
+        "service": "Wish",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.wish.com/api/user/phone-number-login/send-code",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 116,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:13.574Z"
+      },
+      {
+        "service": "Flipkart",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.flipkart.com/api/5/user/otp/generate",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 697,
+        "response": {},
+        "timestamp": "2026-02-04T10:27:14.155Z"
+      },
+      {
+        "service": "Uber",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://auth.uber.com/v2/submit",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 123,
+        "response": "Missing csrf token.",
+        "timestamp": "2026-02-04T10:27:13.582Z"
+      },
+      {
+        "service": "UberEats",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://auth.uber.com/v2/phone",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 150,
+        "response": "Missing csrf token.",
+        "timestamp": "2026-02-04T10:27:13.612Z"
+      },
+      {
+        "service": "Epic Games",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.epicgames.com/id/api/sms/send",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 59,
+        "response": "<html>\n\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <style>.cf_challenge_text_small {\n    font-size: 11px;\n}\n\nbody {\n    height: 100vh;\n    width: 100vw;\n    overflow-x: hidden;\n    font-family: sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    line-height: 20px;\n    letter-spacing: 0.2px;\n    color: rgba(255, 255, 255, 0.5);\n    margin: 0;\n    background: #101014;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    al...",
+        "timestamp": "2026-02-04T10:27:14.405Z"
+      },
+      {
+        "service": "PlayStation",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://ca.account.sony.com/api/v1/ssocookie",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 50,
+        "response": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;ca&#46;account&#46;sony&#46;com&#47;api&#47;v1&#47;ssocookie\" on this server.<P>\nReference&#32;&#35;18&#46;4d9533b8&#46;1770200834&#46;11b6a6ff\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;4d9533b8&#46;1770200834&#46;11b6a6ff</P>\n</BODY>\n</HTML>\n",
+        "timestamp": "2026-02-04T10:27:14.398Z"
+      },
+      {
+        "service": "Mail.ru Cloud",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://cloud.mail.ru/api/v2/notify/applink",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 1577,
+        "response": {
+          "body": "user",
+          "time": 1770200834930,
+          "status": 403
+        },
+        "timestamp": "2026-02-04T10:27:15.930Z"
+      },
+      {
+        "service": "Expedia",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.expedia.com/api/auth/phone",
+        "status": 429,
+        "statusText": "Too Many Requests",
+        "success": false,
+        "duration": 72,
+        "response": "<html>\n    <head>\n        <title>Too Many Requests</title>\n    </head>\n    <body>\n        <h1>Too Many Requests</h1>\n        <p>Provisioned request rate has been exceeded</p>\n        <p>a5678a6c-5d9b-405e-b6a3-e12b4cd43e32</p>\n    </body>\n</html>",
+        "timestamp": "2026-02-04T10:27:26.538Z"
+      },
+      {
+        "service": "Hotels.com",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.hotels.com/api/auth/phone/send",
+        "status": 429,
+        "statusText": "Too Many Requests",
+        "success": false,
+        "duration": 98,
+        "response": "<html>\n    <head>\n        <title>Too Many Requests</title>\n    </head>\n    <body>\n        <h1>Too Many Requests</h1>\n        <p>Provisioned request rate has been exceeded</p>\n        <p>7c770429-da90-4e11-aaf4-60fb55624dfd</p>\n    <script type=\"text/javascript\"  src=\"/AW4Q-lr3/PySv2l8/xZwmJ8j/6f/OYp3Jhbtua6zcz/Fl0XSl4/GzsFK0F/uCn0B\"></script></body>\n</html>",
+        "timestamp": "2026-02-04T10:27:26.565Z"
+      },
+      {
+        "service": "Kayak",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.kayak.com/mvm/auth/sms",
+        "status": 403,
+        "statusText": "Forbidden",
+        "success": false,
+        "duration": 1073,
+        "response": "<!DOCTYPE html>\n<html lang='en-us' dir='ltr'>\n<head>\n<meta name=\"r9-version\" content=\"R803b\"/><meta name=\"r9-built\" content=\"20260203.060204\"/><meta name=\"r9-rendered\" content=\"Tue, 03 Feb 2026 19:05:43 GMT\"/><meta name=\"r9-build-number\" content=\"28\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=a5bef9dcb55a6573c2ccba765257aeba8201df26&amp;cluster=4\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=9dfa2930f8444cedc628f4733093bb51589ee7c4&am...",
+        "timestamp": "2026-02-04T10:27:27.540Z"
+      }
+    ],
+    "unknown": [
+      {
+        "service": "Comfy",
+        "source": "verified",
+        "category": "ecommerce",
+        "type": "sms",
+        "url": "https://comfy.ua/api/auth/password/dynamic",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 281,
+        "response": "404 page not found\n",
+        "timestamp": "2026-02-04T10:26:09.784Z"
+      },
+      {
+        "service": "Portmone",
+        "source": "verified",
+        "category": "payments",
+        "type": "sms",
+        "url": "https://api.portmone.com.ua/auth/v2/registration",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "success": false,
+        "duration": 488,
+        "response": {
+          "error": {
+            "code": 1005,
+            "external_code": null,
+            "external_name": "auth",
+            "error": "internal",
+            "error_description": "Username should not be blank.",
+            "message": "Username should not be blank.",
+            "extra": []
+          },
+          "id": 0
+        },
+        "timestamp": "2026-02-04T10:26:09.993Z"
+      },
+      {
+        "service": "EasyPay",
+        "source": "verified",
+        "category": "payments",
+        "type": "sms",
+        "url": "https://auth.easypay.ua/api/check",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 562,
+        "response": {
+          "data": null,
+          "error": {
+            "errorCode": "INVALID_PARTNERKEY",
+            "title": "Платіжна помилка",
+            "description": "Платіжна помилка",
+            "errorMessage": "Наданий Partner-key некоректний",
+            "fieldErrors": []
+          }
+        },
+        "timestamp": "2026-02-04T10:26:10.068Z"
+      },
+      {
+        "service": "Bi.ua",
+        "source": "verified",
+        "category": "ecommerce",
+        "type": "sms",
+        "url": "https://bi.ua/api/v1/accounts",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 553,
+        "response": {
+          "data": null,
+          "meta": null,
+          "status": {
+            "message": "Не введений телефон",
+            "code": 400
+          }
+        },
+        "timestamp": "2026-02-04T10:26:10.065Z"
+      },
+      {
+        "service": "Phonet Call 1",
+        "source": "verified",
+        "category": "callback",
+        "type": "call",
+        "url": "https://origami.phonet.com.ua/rest/public/widget/call-catchers/d494caf7-b9df-43ea-9148-e4871ba6cfe8/call",
+        "status": 400,
+        "statusText": "",
+        "success": false,
+        "duration": 921,
+        "response": {
+          "error": "Bad Request",
+          "message": "telerSessionId is null or empty"
+        },
+        "timestamp": "2026-02-04T10:26:10.435Z"
+      },
+      {
+        "service": "Phonet Call 2",
+        "source": "verified",
+        "category": "callback",
+        "type": "call",
+        "url": "https://origami.phonet.com.ua/rest/public/widget/call-catchers/24882f40-7a0d-4b8b-8bc0-b290c725c281/call",
+        "status": 400,
+        "statusText": "",
+        "success": false,
+        "duration": 920,
+        "response": {
+          "error": "Bad Request",
+          "message": "telerSessionId is null or empty"
+        },
+        "timestamp": "2026-02-04T10:26:10.435Z"
+      },
+      {
+        "service": "Frutalina Callback",
+        "source": "verified",
+        "category": "callback",
+        "type": "call",
+        "url": "https://frutalina.com.ua/callmeback/",
+        "status": 500,
+        "statusText": "Internal Server Error",
+        "success": false,
+        "duration": 411,
+        "response": "\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Oops, something went wrong!</title>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0\">\r\n    <meta name=\"robots\" content=\"noindex\" />\r\n    <style type=\"text/css\">\r\n        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');\r\n        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&di...",
+        "timestamp": "2026-02-04T10:26:12.199Z"
+      },
+      {
+        "service": "EasyPay Reg",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.easypay.ua/api/auth/register",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "success": false,
+        "duration": 2598,
+        "response": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>easypay.ua | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" co...",
+        "timestamp": "2026-02-04T10:26:14.393Z"
+      },
+      {
+        "service": "OnTaxi",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://ontaxi.com.ua/api/v2/web/client",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 1255,
+        "response": {
+          "ok": false,
+          "error": "BAD_REQUEST",
+          "errorMessage": null
+        },
+        "timestamp": "2026-02-04T10:26:13.052Z"
+      },
+      {
+        "service": "Uklon",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://uklon.com.ua/api/v1/account/code/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1847,
+        "response": "\n<!doctype html>\n<html lang=\"uk\">\n\n<head><style>img.lazy{min-height:1px}</style><link href=\"https://uklon.com.ua/app/plugins/w3-total-cache/pub/js/lazyload.min.js\" as=\"script\">\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n    <meta name=\"apple-itunes-app\" content=\"app-id=654646098\">\n    <script type=\"text/javascript\" data-cookieconsent=\"ignore\">\n\twindow.dataLayer = window.dataLayer || [...",
+        "timestamp": "2026-02-04T10:26:13.645Z"
+      },
+      {
+        "service": "Moyo",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.moyo.ua/identity/registration",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 1709,
+        "response": "\n<!DOCTYPE html>\n<html\n    xmlns=\"http://www.w3.org/1999/xhtml\"\n    xml:lang=\"ru\"\n    lang=\"ru\"\n    class=\"\"\n>\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n        <meta name=\"google-site-verification\" content=\"1eeeVW2Mf8dKYGwD6YN-i8OqVmHB9u3WL0Tbee_8f30\"/>\n        <meta name=\"viewport\" content=\"width=1400, initial-scale=0, maximum-scale=1\">\n    \t\n<title>Moyo</title>\n\n\n\n\n    <meta property=\"og:image\" content=\"https://www.moyo.ua/images/logo.png\" />\n\n<me...",
+        "timestamp": "2026-02-04T10:26:13.507Z"
+      },
+      {
+        "service": "Planeta Kino",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://cabinet.planetakino.ua/service/sms",
+        "status": 523,
+        "statusText": "<none>",
+        "success": false,
+        "duration": 1884,
+        "response": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>planetakino.ua | 523: Origin is unreachable</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-...",
+        "timestamp": "2026-02-04T10:26:25.786Z"
+      },
+      {
+        "service": "OLX Auth",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.olx.ua/api/open/oauth/phone-auth/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 470,
+        "response": {
+          "error": {
+            "type": "NotFoundException",
+            "message": "Not found: /oauth/phone-auth/"
+          }
+        },
+        "timestamp": "2026-02-04T10:26:24.374Z"
+      },
+      {
+        "service": "Foxtrot",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.foxtrot.com.ua/api/v2/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 736,
+        "response": "\n\n\n\n<!DOCTYPE html>\n<html lang=\"uk\" data-isauthenticated=\"False\" data-mobile=\"False\" data-user=\"L3VrL2FjY291bnQvZ2V0dXNlcmlk\" data-selectedcityid=\"\">\n<head>\n\n    <meta charset=\"utf-8\" />\n\n    \n\n\n<title></title>\n\n<meta property=\"og:description\" />\n<meta property=\"og:title\" />\n\n    <meta property=\"og:url\" content=\"https://www.foxtrot.com.ua/uk/layout/http404\" />\n\n<meta name=\"description\" />\n\n    <meta property=\"og:image\" content=\"https://macaroncms.s3.eu-central-1.amazonaws.com/UploadsCatalog/foxt...",
+        "timestamp": "2026-02-04T10:26:24.642Z"
+      },
+      {
+        "service": "Epicentr",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://epicentrk.ua/ajax/auth/sendSmsCode/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 783,
+        "response": "\n<!DOCTYPE html>\n<html lang=\"uk\">\n<head>\n    <meta charset=\"UTF-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n    <title>EPICENTRK.UA - Помилка 404. Сторінка не знайдена</title>\n        <!-- Google Tag Manager -->\n    <script data-skip-moving=\"true\">(function (w, d, s, l, i) {\n        w[l] = w[l] || [];\n        w[l].push({\n            'gtm.start': new Date().getTime(), event: 'gtm.js'\n        });\n        var f = d.getElementsByTagName(s)[0],\n            j = d.c...",
+        "timestamp": "2026-02-04T10:26:24.689Z"
+      },
+      {
+        "service": "Silpo",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://sf-ecom-api.silpo.ua/v1/uk/user/otp/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 344,
+        "response": {
+          "message": "No route configured"
+        },
+        "timestamp": "2026-02-04T10:26:24.250Z"
+      },
+      {
+        "service": "Fozzy",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://fozzy.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 573,
+        "response": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta name=\"robots\" content=\"index, follow\" />\n<link href=\"/bitrix/js/main/core/css/core.css?1768242504\" type=\"text/css\" rel=\"stylesheet\" />\n<link href=\"/bitrix/components/bitrix/main.map/templates/.default/style.css?1768242504\" type=\"text/css\" rel=\"stylesheet\" />\n<link href=\"/bitrix/templates/FozzyGroup/styles.css?1768242510\" type=\"text/css\" rel=\"stylesheet\" />\n<link href=\"/bitrix/templates/Fozz...",
+        "timestamp": "2026-02-04T10:26:24.480Z"
+      },
+      {
+        "service": "Glovo",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.glovoapp.com/v3/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 256,
+        "response": {
+          "error": {
+            "message": "/v3/auth/phone NOT FOUND",
+            "userInfo": {},
+            "domain": "com.glovoapp.core-services",
+            "requestId": "7554948e25fb0a791ccb4bbf31defab9"
+          }
+        },
+        "timestamp": "2026-02-04T10:26:24.164Z"
+      },
+      {
+        "service": "Bolt",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://node.bolt.eu/user/v1/phone/requestPhoneConfirmation",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 307,
+        "response": {
+          "message": "Route POST:/v1/phone/requestPhoneConfirmation not found",
+          "error": "Not Found",
+          "statusCode": 404
+        },
+        "timestamp": "2026-02-04T10:26:24.215Z"
+      },
+      {
+        "service": "Meest",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.meest.com/v3/auth/phone",
+        "status": 410,
+        "statusText": "Gone",
+        "success": false,
+        "duration": 549,
+        "response": {
+          "status": "error",
+          "info": {
+            "fieldName": "1",
+            "message": "Bad Version",
+            "messageDetails": "1"
+          },
+          "result": ""
+        },
+        "timestamp": "2026-02-04T10:26:24.459Z"
+      },
+      {
+        "service": "PrivatBank",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://otp.privatbank.ua/api/v1/otp/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1335,
+        "response": "<!DOCTYPE html>\n<html class=\"no-js\" app-theme=\"light-green\" lang=\"uk\">\n\n<head>\n        <meta charset=\"utf-8\">\n            \n                    \n\n            \n\n            \n            <link rel=\"canonical\" href=\"https://privatbank.ua/api/v1/otp/send\" />\n    <link rel=\"alternate\" hreflang=\"uk\" href=\"https://privatbank.ua/api/v1/otp/send\" />\n    <link rel=\"preconnect\" href=\"//privatbank.ua\">\n\n    <link rel=\"preload\" href=\"/sites/pb/libs/jquery-3.6.0/jquery-3.6.0.min.js\" as=\"script\">\n    <link rel=...",
+        "timestamp": "2026-02-04T10:26:25.246Z"
+      },
+      {
+        "service": "Lifecell",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://my.lifecell.ua/api/auth/sms",
+        "status": 404,
+        "statusText": "NOT FOUND",
+        "success": false,
+        "duration": 1555,
+        "response": "<!DOCTYPE html>\n<html ng-app=\"MyLifeApp\" lang=\"uk\">\n<head>\n  <title>\n    \n      \n        lifecell. Підключай майбутне - 4.5G інтернет, 4.5G тарифи, 4.5G пакети інтернету, тарифи на інтернет\n      \n    \n  </title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n  \n    <meta name=\"keywords\" content=\"\"/>\n    <meta name=\"description\" content=\"\"/>\n    <meta name=\"og:title\" content=\"lifecell. Підключай майбутне - 4.5G інте...",
+        "timestamp": "2026-02-04T10:26:25.467Z"
+      },
+      {
+        "service": "Megogo",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.megogo.net/v1/auth/send-code",
+        "status": 406,
+        "statusText": "Not Acceptable",
+        "success": false,
+        "duration": 481,
+        "response": "",
+        "timestamp": "2026-02-04T10:26:36.497Z"
+      },
+      {
+        "service": "Sweet.tv",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://sweet.tv/api/auth/send-code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1239,
+        "response": "<!DOCTYPE html>\n<html lang=\"uk-US\" prefix=\"og: http://ogp.me/ns#\">\n<head>\n    \n            <!-- Google Tag Manager -->\n<script>\n    window.dataLayer = window.dataLayer || [];\n\n    function gtag() {\n        dataLayer.push(arguments);\n    }\n    gtag('consent', 'default', {\n        'ad_storage': 'denied',\n        'analytics_storage': 'denied',\n        'ad_personalization': 'denied',\n        'ad_user_data': 'denied',\n        'personalization_storage': 'denied',\n\n        'functionality_storage': 'gra...",
+        "timestamp": "2026-02-04T10:26:37.257Z"
+      },
+      {
+        "service": "Diia",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api2.diia.gov.ua/api/v1/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 513,
+        "response": {
+          "name": "NotFoundError",
+          "message": "Not found",
+          "code": 404,
+          "type": "NOT_FOUND"
+        },
+        "timestamp": "2026-02-04T10:26:36.532Z"
+      },
+      {
+        "service": "Work.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.work.ua/api/phone-confirm/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 804,
+        "response": {
+          "error": {
+            "type": "NotFoundHttpException",
+            "message": "No route found for \"GET https://www.work.ua/api/phone-confirm/send/\""
+          }
+        },
+        "timestamp": "2026-02-04T10:26:36.825Z"
+      },
+      {
+        "service": "Tickets.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://tickets.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 400,
+        "response": "<!DOCTYPE html><html class=\"theme-default\" lang=\"uk\" dir=\"ltr\"><head><title>Сторінку не знайдено</title><meta name=\"description\" content=\"Шукайте та порівнюйте тисячі пропозицій на дешеві авіаквитки. Знайдіть найкращу ціну на авіарейси від популярних авіакомпаній | Tickets.ua\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1\"><meta name=\"theme-color\" content=\"#6a28d4\"><meta name=\"format-detect...",
+        "timestamp": "2026-02-04T10:26:36.424Z"
+      },
+      {
+        "service": "Proizd",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://proizd.ua/api/auth/send-code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 459,
+        "response": "<!DOCTYPE html><html lang=\"uk\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta content=\"width=device-width, initial-scale=1, maximum-scale=1\" name=\"viewport\" data-next-head=\"\"/><link href=\"https://proizd.ua/404\" hrefLang=\"uk\" rel=\"alternate\" data-next-head=\"\"/><link href=\"https://proizd.ua/en/404\" hrefLang=\"en\" rel=\"alternate\" data-next-head=\"\"/><link href=\"https://proizd.ua/ru/404\" hrefLang=\"ru\" rel=\"alternate\" data-next-head=\"\"/><link href=\"https://proizd.ua/404\" hrefLang=\"x-default\" rel=...",
+        "timestamp": "2026-02-04T10:26:36.485Z"
+      },
+      {
+        "service": "Lun",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.lun.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1164,
+        "response": "  \n  \n    <title>404. Сторінку не знайдено</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"robots\" content=\"noindex, nofollow\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\">\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic\">\n  <style>\n    @charset \"UTF-8\";@-webkit-keyframes scale-down{0%{-webkit-transform:scale(0);transform:scale(0)}50%{-webkit-transform:s...",
+        "timestamp": "2026-02-04T10:26:37.193Z"
+      },
+      {
+        "service": "DomRia",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://dom.ria.com/api/auth/sms",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1418,
+        "response": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html prefix=\"ya: http://webmaster.yandex.ru/vocabularies/\">\n<head>\n    <!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(...",
+        "timestamp": "2026-02-04T10:26:37.448Z"
+      },
+      {
+        "service": "OLX Auto",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://auto.ria.com/api/auth/send-code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 540,
+        "response": {
+          "code": "ResourceNotFound",
+          "message": "/auth/send-code does not exist"
+        },
+        "timestamp": "2026-02-04T10:26:36.571Z"
+      },
+      {
+        "service": "Doc.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://doc.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 453,
+        "response": {
+          "error": {
+            "code": 0,
+            "message": "Невозможно обработать запрос \"api/auth/phone\"."
+          }
+        },
+        "timestamp": "2026-02-04T10:26:36.485Z"
+      },
+      {
+        "service": "Apteka24",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.apteka24.ua/api/auth/sms",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "success": false,
+        "duration": 387,
+        "response": "Unauthorized",
+        "timestamp": "2026-02-04T10:26:36.420Z"
+      },
+      {
+        "service": "Kyivgaz",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://my.kyivgaz.ua/api/auth/sms",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "success": false,
+        "duration": 1008,
+        "response": {
+          "message": "Unauthenticated."
+        },
+        "timestamp": "2026-02-04T10:26:37.045Z"
+      },
+      {
+        "service": "Kyivvodokanal",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://my.vodokanal.kiev.ua/api/auth/phone",
+        "status": 405,
+        "statusText": "Not Allowed",
+        "success": false,
+        "duration": 1082,
+        "response": "<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.25.3</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a p...",
+        "timestamp": "2026-02-04T10:26:37.121Z"
+      },
+      {
+        "service": "KFC UA",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.kfc.ua/api/auth/send-code",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 826,
+        "response": "<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padd...",
+        "timestamp": "2026-02-04T10:26:36.867Z"
+      },
+      {
+        "service": "Puzata Hata",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://puzatahata.ua/api/auth/phone",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 198,
+        "response": "<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding ...",
+        "timestamp": "2026-02-04T10:26:48.349Z"
+      },
+      {
+        "service": "Panda Pizza",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://panda-pizza.com.ua/api/auth/send-code",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 282,
+        "response": {
+          "message": ""
+        },
+        "timestamp": "2026-02-04T10:26:48.435Z"
+      },
+      {
+        "service": "Panda Sushi",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://panda-sushi.com.ua/api/auth/phone",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 283,
+        "response": {
+          "message": ""
+        },
+        "timestamp": "2026-02-04T10:26:48.436Z"
+      },
+      {
+        "service": "Oschadbank",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://online.oschadbank.ua/api/auth/sms",
+        "status": 404,
+        "statusText": "",
+        "success": false,
+        "duration": 1244,
+        "response": "<html><head><title>HTTP Status 404</title><style><!--body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}--></style> </head><body><h1>HTTP Status 404</h1><HR size=\"1\" noshade=\"noshade\"><p><b>type</b> Status Report</p><p><b>Description</b> <u>http.404</u></p><HR size=\"1\" noshade=\"noshade\"><h3>Web S...",
+        "timestamp": "2026-02-04T10:26:49.398Z"
+      },
+      {
+        "service": "A-Bank",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://a-bank.com.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "",
+        "success": false,
+        "duration": 625,
+        "response": {
+          "timestamp": 1770200808691,
+          "status": 404,
+          "error": "Not Found",
+          "message": "No message available",
+          "path": "/api/auth/phone"
+        },
+        "timestamp": "2026-02-04T10:26:48.780Z"
+      },
+      {
+        "service": "Izibank",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://izibank.com.ua/api/auth/otp",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 742,
+        "response": {
+          "message": "The POST method is not supported for route api/auth/otp. Supported methods: GET, HEAD."
+        },
+        "timestamp": "2026-02-04T10:26:48.898Z"
+      },
+      {
+        "service": "Ukrgasbank",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://online.ukrgasbank.com/api/auth/phone",
+        "status": 401,
+        "statusText": "",
+        "success": false,
+        "duration": 487,
+        "response": {
+          "error": "unauthorized",
+          "error_description": "Full authentication is required to access this resource"
+        },
+        "timestamp": "2026-02-04T10:26:48.643Z"
+      },
+      {
+        "service": "WhatsApp",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://web.whatsapp.com/api/auth/register",
+        "status": 404,
+        "statusText": "Page Not Found",
+        "success": false,
+        "duration": 24,
+        "response": "<html>\n<head>\n<title>WhatsApp Error</title>\n</head>\n\n<body>\n<h1>WhatsApp Error</h1>\n</body>\n\n</html>\n",
+        "timestamp": "2026-02-04T10:27:00.286Z"
+      },
+      {
+        "service": "Instagram",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.instagram.com/api/v1/accounts/send_signup_sms/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 53,
+        "response": "<!DOCTYPE html>\n<html lang=\"None\" class=\"no-js not-logged-in \">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\n        <title>\n                  Page Not Found &bull; Instagram\n                </title>\n\n        \n        <meta name=\"robots\" content=\"noimageindex, noarchive\">\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\">\n        <meta name=\"mobile-web-app-capable\" content=\"yes\">\n        <meta name=\"theme-colo...",
+        "timestamp": "2026-02-04T10:27:00.316Z"
+      },
+      {
+        "service": "Monobank App",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.monobank.ua/personal/auth/registration/start",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 281,
+        "response": "404 page not found\n",
+        "timestamp": "2026-02-04T10:27:00.546Z"
+      },
+      {
+        "service": "PrivatBank P24",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://link.privatbank.ua/api/p24/pub/confirm/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1181,
+        "response": "<!DOCTYPE html>\n<html class=\"no-js\" app-theme=\"light-green\" lang=\"uk\">\n\n<head>\n        <meta charset=\"utf-8\">\n            \n                    \n\n            \n\n            \n            <link rel=\"canonical\" href=\"https://privatbank.ua/api/p24/pub/confirm/phone\" />\n    <link rel=\"alternate\" hreflang=\"uk\" href=\"https://privatbank.ua/api/p24/pub/confirm/phone\" />\n    <link rel=\"preconnect\" href=\"//privatbank.ua\">\n\n    <link rel=\"preload\" href=\"/sites/pb/libs/jquery-3.6.0/jquery-3.6.0.min.js\" as=\"scr...",
+        "timestamp": "2026-02-04T10:27:01.447Z"
+      },
+      {
+        "service": "Makeup UA",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://makeup.com.ua/ajax/auth/sendcode/",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 389,
+        "response": {
+          "message": "The POST method is not supported for route ajax/auth/sendcode. Supported methods: GET, HEAD."
+        },
+        "timestamp": "2026-02-04T10:27:00.657Z"
+      },
+      {
+        "service": "Intertop",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://intertop.ua/api/customer/auth/sendOtp",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 730,
+        "response": "<!DOCTYPE html>\n<html lang=\"uk\">\n<head>\n    <meta name=\"csrf-token\" content=\"a6942b4d266efc8c6cb155a6def53079\">\n    \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui\">\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n        <link rel=\"preconnect\" href=\"https://cdn.intertop.com\">\n        <meta name=\"apple-itunes-app\" content=\"app-id=1258680576, app-argument=https://intertop.ua/api/customer/auth/sendOtp\">\n    <meta property=\"og:locale\" co...",
+        "timestamp": "2026-02-04T10:27:00.998Z"
+      },
+      {
+        "service": "OLX.ua v2",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.olx.ua/api/open/account/phone/verify/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 729,
+        "response": {
+          "error": {
+            "type": "NotFoundException",
+            "message": "Not found: /account/phone/verify/"
+          }
+        },
+        "timestamp": "2026-02-04T10:27:01.000Z"
+      },
+      {
+        "service": "PROM.ua",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://prom.ua/api/auth/phone/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 764,
+        "response": {
+          "message": "Route POST:/api/auth/phone/send not found",
+          "error": "Not Found",
+          "statusCode": 404
+        },
+        "timestamp": "2026-02-04T10:27:01.036Z"
+      },
+      {
+        "service": "Prostor",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://prostor.ua/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 2219,
+        "response": " <!doctype html><html lang=\"ru\"><head ><script> var LOCALE = 'ru\\u002DRU'; var BASE_URL = 'https\\u003A\\u002F\\u002Fprostor.ua\\u002Fru\\u002F'; var require = { 'baseUrl': 'https\\u003A\\u002F\\u002Fstatic.prostor.ua\\u002Fversion1770014367\\u002Ffrontend\\u002FProstor\\u002Fporto_child\\u002Fru_RU' };</script> <meta charset=\"utf-8\"/><script type=\"text/javascript\">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:[]},feature_flags:[\"soft_nav\"],browser_consent_mode:{enabled:fals...",
+        "timestamp": "2026-02-04T10:27:02.492Z"
+      },
+      {
+        "service": "Citrus",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.citrus.ua/api/auth/phone/send",
+        "status": 500,
+        "statusText": "Internal Server Error",
+        "success": false,
+        "duration": 1203,
+        "response": "Internal Server Error",
+        "timestamp": "2026-02-04T10:27:01.477Z"
+      },
+      {
+        "service": "Ukrposhta",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://track.ukrposhta.ua/api/auth/sendCode",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 907,
+        "response": "<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.26.1</center>\r\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9c897918ecb5606a',t:'MTc3MDIwMDgyMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getEle...",
+        "timestamp": "2026-02-04T10:27:01.183Z"
+      },
+      {
+        "service": "Ringostat",
+        "source": "ukrainian",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://api.ringostat.net/callback/v1/call",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 388,
+        "response": {
+          "message": "no route and no API found with those values"
+        },
+        "timestamp": "2026-02-04T10:27:12.774Z"
+      },
+      {
+        "service": "Instagram",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://i.instagram.com/api/v1/accounts/send_sms_code/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 658,
+        "response": "<!DOCTYPE html>\n<html lang=\"None\" class=\"no-js not-logged-in \">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\n        <title>\n                  Page Not Found &bull; Instagram\n                </title>\n\n        \n        <meta name=\"robots\" content=\"noimageindex, noarchive\">\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\">\n        <meta name=\"mobile-web-app-capable\" content=\"yes\">\n        <meta name=\"theme-colo...",
+        "timestamp": "2026-02-04T10:27:13.047Z"
+      },
+      {
+        "service": "Twitter/X",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.twitter.com/1.1/onboarding/task.json",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 67,
+        "response": {
+          "errors": [
+            {
+              "code": 215,
+              "message": "Bad Authentication data."
+            }
+          ]
+        },
+        "timestamp": "2026-02-04T10:27:12.458Z"
+      },
+      {
+        "service": "Snapchat",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://accounts.snapchat.com/accounts/send_sms_code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 169,
+        "response": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"referrer\" content=\"origin\"><meta name=\"apple-itunes-app\" content=\"app-id=447188370\"><title>404 &bull; Snapchat</title><meta name=\"apple-mobile-web-app-capable\" content=\"no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"stylesheet\" href=\"https://static.snapchat.com/accounts-ui/static/1767983282/styles/404.c...",
+        "timestamp": "2026-02-04T10:27:12.563Z"
+      },
+      {
+        "service": "Discord",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://discord.com/api/v9/auth/register/phone",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 102,
+        "response": {
+          "captcha_key": [
+            "Для підтвердження номера телефону треба оновити програму."
+          ],
+          "captcha_sitekey": "a9b5fb07-92ff-493f-86fe-352a2803b3df",
+          "captcha_service": "hcaptcha",
+          "captcha_session_id": "38eea119-09cf-4359-89d6-76c83e120eef",
+          "captcha_rqdata": "rRuf3k8fc7aSzfC+rRFUkbwlbnW/7Yi6++sXKLDkjfZuPKNwVI2F//zqBXhi/808mU5kCCbH1kfuB2GsrVNdM0upqEZ9N9vmpTCJ4SGWuBK46jkOJFHnqnzE7Cb4Jq9eZGvu/NAoKUCBUysZVXNSq1PAH1YK+bujLG5hSoWqbHFGX2MHS22eFlQEAvpmN/k4LkucBdHgjN3YXSge3mzJThBQSjVr62+Z",
+          "captcha_rqtoken": "ImcwWkhiaVhzUXFZaitiNTNZMlROcFp0bU5hVzBmNUU0MDYybHZEc3VqUjFyWVh2REsxNWtsdnZlVm90V3FDaGFHSnJDNGc9PUlwRlJNUHNMeHpPbVNyOUUi.aYMfAA.ywqThSfukFG2NvvjGAWEAnKju_s"
+        },
+        "timestamp": "2026-02-04T10:27:12.497Z"
+      },
+      {
+        "service": "Google",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://accounts.google.com/signin/v2/challenge/sk/presend",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 126,
+        "response": "<html lang=\"uk\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"><title>Error 400 (Недійсний запит)!!1</title><style nonce=\"yQ_fcoVpq_G3ezk1CJGRrw\">*{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{color:#222;text-align:unset;margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px;}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-...",
+        "timestamp": "2026-02-04T10:27:12.523Z"
+      },
+      {
+        "service": "Outlook",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://outlook.live.com/owa/auth/getotc",
+        "status": 500,
+        "statusText": "Internal Server Error",
+        "success": false,
+        "duration": 415,
+        "response": "\r\n<!DOCTYPE html>\r\n<html dir=\"ltr\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta http-equiv=\"pragma\" content=\"no-cache\" />\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <meta name=\"google\" value=\"notranslate\">\r\n    <meta name=\"format-detection\" content=\"telephone=no\" />\r\n        <meta name=\"referrer\" content=\"origin\">\r\n    \r\n\r\n    <link rel=\"shortcut icon\" ...",
+        "timestamp": "2026-02-04T10:27:12.816Z"
+      },
+      {
+        "service": "Tinder",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 52,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:12.456Z"
+      },
+      {
+        "service": "Amazon",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.amazon.com/ap/cvf/request",
+        "status": 503,
+        "statusText": "Service Unavailable",
+        "success": false,
+        "duration": 198,
+        "response": "<!--\n        To discuss automated access to Amazon data please contact api-services-support@amazon.com.\n        For information about migrating to our APIs refer to our Marketplace APIs at https://developer.amazonservices.com/ref=rm_5_sv, or our Product Advertising API at https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html/ref=rm_5_ac for advertising use cases.\n-->\n<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n...",
+        "timestamp": "2026-02-04T10:27:13.654Z"
+      },
+      {
+        "service": "Alibaba",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://login.alibaba.com/newlogin/sms/send.do",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 95,
+        "response": {
+          "timestamp": 1770200833544,
+          "status": 404,
+          "error": "Not Found",
+          "message": "No message available",
+          "path": "/newlogin/sms/send.do"
+        },
+        "timestamp": "2026-02-04T10:27:13.552Z"
+      },
+      {
+        "service": "Lyft",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.lyft.com/v1/phone/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 88,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:13.547Z"
+      },
+      {
+        "service": "Grab",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.grab.com/auth/v1/otp/send",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "success": false,
+        "duration": 784,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:14.243Z"
+      },
+      {
+        "service": "DiDi",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.didiglobal.com/v1/auth/sms",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 122,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>router/2.42.0</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page ...",
+        "timestamp": "2026-02-04T10:27:13.582Z"
+      },
+      {
+        "service": "Glovo",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.glovoapp.com/v3/auth/token",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 167,
+        "response": {
+          "error": {
+            "message": "/v3/auth/token NOT FOUND",
+            "userInfo": {},
+            "domain": "com.glovoapp.core-services",
+            "requestId": "429c77e4220873102c80744cfbc1db87"
+          }
+        },
+        "timestamp": "2026-02-04T10:27:13.627Z"
+      },
+      {
+        "service": "Deliveroo",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.deliveroo.com/orderapp/v1/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 245,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:13.706Z"
+      },
+      {
+        "service": "DoorDash",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.doordash.com/v2/auth/sms_login",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 232,
+        "response": "Not found.",
+        "timestamp": "2026-02-04T10:27:13.694Z"
+      },
+      {
+        "service": "Wolt",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://restaurant-api.wolt.com/v1/auth/phone/request",
+        "status": 404,
+        "statusText": "NOT FOUND",
+        "success": false,
+        "duration": 529,
+        "response": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+        "timestamp": "2026-02-04T10:27:13.992Z"
+      },
+      {
+        "service": "Wise",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://wise.com/gateway/v3/verification/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 250,
+        "response": {
+          "error": "Not Found",
+          "status": "404",
+          "message": "Resource not found"
+        },
+        "timestamp": "2026-02-04T10:27:13.714Z"
+      },
+      {
+        "service": "Revolut",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.revolut.com/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 212,
+        "response": {
+          "message": "The requested resource was not found"
+        },
+        "timestamp": "2026-02-04T10:27:13.677Z"
+      },
+      {
+        "service": "Binance",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.binance.com/bapi/accounts/v1/public/authcenter/sms/verify-code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 186,
+        "response": {
+          "status": 404,
+          "message": "No message available",
+          "timestamp": 1770200834452,
+          "error": "Not Found",
+          "path": "/v1/public/authcenter/sms/verify-code"
+        },
+        "timestamp": "2026-02-04T10:27:14.528Z"
+      },
+      {
+        "service": "Coinbase",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.coinbase.com/api/v3/sms/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 67,
+        "response": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /404</pre>\n</body>\n</html>\n",
+        "timestamp": "2026-02-04T10:27:14.410Z"
+      },
+      {
+        "service": "Crypto.com",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://crypto.com/api/v1/auth/phone",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 112,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:14.456Z"
+      },
+      {
+        "service": "QIWI",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://mobile-api.qiwi.com/oauth/authorize",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "success": false,
+        "duration": 399,
+        "response": {
+          "error": "invalid_client",
+          "error_description": "Request must contain client_id parameter.",
+          "error_code": "102",
+          "user_message": "Seems like something isn’t going right. Try again later."
+        },
+        "timestamp": "2026-02-04T10:27:14.744Z"
+      },
+      {
+        "service": "Riot Games",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://auth.riotgames.com/api/v1/phone/send",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 114,
+        "response": "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"utf-8\">\n    <title data-i18n=\"\">error</title>\n    <meta name=\"google\" content=\"notranslate\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, maximum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <link rel=\"stylesheet\" href=\"https://lolstatic-a.akamaihd.net/rso-login-page/3.2.57/error.css\">\n    <link rel=\"shortcut icon\" href=\"https://lolstatic-a.akamaihd.net/rso-login-page/3.2.57/assets/favicon....",
+        "timestamp": "2026-02-04T10:27:14.461Z"
+      },
+      {
+        "service": "Blizzard",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://eu.account.blizzard.com/api/sms/phone",
+        "status": 401,
+        "statusText": "",
+        "success": false,
+        "duration": 521,
+        "response": "<!doctype html><html><head><script>var AccountSettingsProperties = {cookieConsentEnabled: true,arkosePublicKey: \"9C3260E3-AD4C-6719-E0A9-56D21BFB0BCD\",arkoseLabsEnabled: true,region: \"US\"};</script><script>var BlzCookieConsent = {host: 'battle.net', allowlistedCookies: ['[]']};</script><script src=\"https://bnetaccount.akamaized.net/static/js/cookie-consent-filter.js\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getEleme...",
+        "timestamp": "2026-02-04T10:27:14.868Z"
+      },
+      {
+        "service": "Netflix",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.netflix.com/api/shakti/mre/phonelookup",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 85,
+        "response": {
+          "timestamp": "2026-02-04T10:27:14.424+00:00",
+          "status": 404,
+          "error": "Not Found",
+          "message": "No message available",
+          "path": "/shakti/mre/phonelookup"
+        },
+        "timestamp": "2026-02-04T10:27:14.433Z"
+      },
+      {
+        "service": "Spotify",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.spotify.com/api/signup/v1/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 120,
+        "response": "<!DOCTYPE html><html dir=\"ltr\" lang=\"en\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-head=\"\"/><link rel=\"preload\" href=\"https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-head=\"\"/><li...",
+        "timestamp": "2026-02-04T10:27:14.469Z"
+      },
+      {
+        "service": "Disney+",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://disney.api.edge.bamgrid.com/v1/public/sms",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 43,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:14.392Z"
+      },
+      {
+        "service": "HBO Max",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://oauth.api.hbo.com/auth/phone",
+        "status": 503,
+        "statusText": "Backend unavailable, connection timeout",
+        "success": false,
+        "duration": 1336,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:15.686Z"
+      },
+      {
+        "service": "Apple TV+",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://appleid.apple.com/auth/verify/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 208,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>Apple</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to d...",
+        "timestamp": "2026-02-04T10:27:14.558Z"
+      },
+      {
+        "service": "iCloud",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://appleid.apple.com/auth/verify/phone/put",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 205,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>Apple</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to d...",
+        "timestamp": "2026-02-04T10:27:14.556Z"
+      },
+      {
+        "service": "Dropbox",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.dropbox.com/ajax_verify_phone_number",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 47,
+        "response": "<!DOCTYPE html>\n<html>\n<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<title>Dropbox - 404</title>\n<link href=\"https://cfl.dropboxstatic.com/static/metaserver/static/css/error.css\" rel=\"stylesheet\" type=\"text/css\"/>\n<link rel=\"shortcut icon\" href=\"https://cfl.dropboxstatic.com/static/images/favicon.ico\"/>\n</head>\n<body>\n<div class=\"figure\">\n<img src=\"https://assets.dropbox.com/www/en-us/illustration...",
+        "timestamp": "2026-02-04T10:27:14.399Z"
+      },
+      {
+        "service": "Google Drive",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://accounts.google.com/v3/signin/_/lookup",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 46,
+        "response": "<html lang=\"uk\" dir=ltr><meta charset=utf-8><meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"><title>Error 400 (Недійсний запит)!!1</title><style nonce=\"YIZE_r1Ws83OVVaV--WclQ\">*{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{color:#222;text-align:unset;margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px;}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-...",
+        "timestamp": "2026-02-04T10:27:14.398Z"
+      },
+      {
+        "service": "Skype",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://login.skype.com/login/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 388,
+        "response": "<!DOCTYPE html><html class=\"noTabletState ltr \" lang=\"uk-UA\" dir=\"ltr\"><head><meta charset=\"utf-8\"/><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"/><title>Сторінку не знайдено</title><meta content=\"width=device-width, initial-scale=1\" name=\"viewport\"/><!-- IE10 snap mode fix - should be included before all linked resources to work properly --><style type=\"text/css\">@-webkit-viewport{width:device-width;} @-moz-viewport{widt...",
+        "timestamp": "2026-02-04T10:27:14.741Z"
+      },
+      {
+        "service": "Teams",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 117,
+        "response": {
+          "error": "invalid_request",
+          "error_description": "AADSTS900144: The request body must contain the following parameter: 'grant_type'. Trace ID: 92085e6e-888b-4c9c-b3b6-2eeae1e11d00 Correlation ID: 1b87880b-6180-4dd4-be5b-5873ce5ede9b Timestamp: 2026-02-04 10:27:26Z",
+          "error_codes": [
+            900144
+          ],
+          "timestamp": "2026-02-04 10:27:26Z",
+          "trace_id": "92085e6e-888b-4c9c-b3b6-2eeae1e11d00",
+          "correlation_id": "1b87880b-6180-4dd4-be5b-5873ce5ede9b",
+          "error_uri": "https://login.microsoftonline.com/error?code=900144"
+        },
+        "timestamp": "2026-02-04T10:27:26.579Z"
+      },
+      {
+        "service": "ICQ",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.icq.com/smsreg/requestPhoneValidation.php",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 2083,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-...",
+        "timestamp": "2026-02-04T10:27:28.546Z"
+      },
+      {
+        "service": "Booking.com",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.booking.com/authentication/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 522,
+        "response": "<!DOCTYPE html>\n<!--\nYou know you could be getting paid to poke around in our code?\nWe're hiring designers and developers to work in Amsterdam:\nhttps://careers.booking.com/\n-->\n<!-- wdot-802 -->\n<html lang=\"uk\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# booking_com: http://ogp.me/ns/fb/booking_com#\" class=\"noJS b_chrome b_chrome_120 supports_inline-block supports_flexbox_unprefixed supports_fontface \" >\n<head profile=\"http://a9.com/-/spec/opensearch/1.1/\">\n<script type=\"text/javascri...",
+        "timestamp": "2026-02-04T10:27:26.986Z"
+      },
+      {
+        "service": "Airbnb",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.airbnb.com/v2/phone_verification/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 79,
+        "response": {
+          "error_code": 404,
+          "error_type": "route_not_found",
+          "error_message": "Route not found"
+        },
+        "timestamp": "2026-02-04T10:27:26.544Z"
+      },
+      {
+        "service": "Pornhub",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.pornhub.com/user/phone_number/send_verification_code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 541,
+        "response": "<!DOCTYPE html>\n<html class=\"language-en\" lang=\"en\">\n\n\n<head>\n\t<meta http-equiv=\"Content-type\" content=\"text/html; charset=UTF-8\" />\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"rating\" content=\"RTA-5042-1996-1400-1577-RTA\" />\n    <meta name=\"rating\" content=\"adult\"/>\n\n    \n                                        <title>Page Not Found</title>\n                            \n    <script>\n        ...",
+        "timestamp": "2026-02-04T10:27:27.009Z"
+      },
+      {
+        "service": "OnlyFans",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://onlyfans.com/api2/v2/users/register/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 82,
+        "response": {
+          "error": {
+            "code": 0,
+            "message": "Route not found."
+          }
+        },
+        "timestamp": "2026-02-04T10:27:26.551Z"
+      },
+      {
+        "service": "Chaturbate",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://chaturbate.com/auth/phone_verify/",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 179,
+        "response": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\n\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns=\"http://www.w3.org/1999/html\" lang=\"en\">\n\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n  <script type=\"text/javascript\">window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.nr-data.net\",\"errorBeacon\":\"bam.nr-data.net\",\"licenseKey\":\"6f524845d1\",\"applicationID\":\"24279235\",\"transactionName\":\"MwYEbUdYXxJQWhULD...",
+        "timestamp": "2026-02-04T10:27:26.648Z"
+      },
+      {
+        "service": "Craigslist",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://post.craigslist.org/c/sfo/phone",
+        "status": 405,
+        "statusText": "Method Not Allowed",
+        "success": false,
+        "duration": 75,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:26.544Z"
+      },
+      {
+        "service": "Facebook Marketplace",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.facebook.com/api/graphql/",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 73,
+        "response": "<!DOCTYPE html><html lang=\"en\" id=\"facebook\"><head><title>Error</title><meta charset=\"utf-8\" /><meta http-equiv=\"Cache-Control\" content=\"no-cache\" /><meta name=\"robots\" content=\"noindex,nofollow\" /><style nonce=\"J19wZLed\">html, body { color: #333; font-family: 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif; margin: 0; padding: 0; text-align: center;}\n#header { height: 30px; padding-bottom: 10px; padding-top: 10px; text-align: center;}\n#icon { width: 30px;}\n.core { margin: auto; paddin...",
+        "timestamp": "2026-02-04T10:27:26.543Z"
+      },
+      {
+        "service": "eBay Kleinanzeigen",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.ebay-kleinanzeigen.de/s-anzeige-aufgeben.html",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 1116,
+        "response": {
+          "timestamp": 1770200847540,
+          "status": 404,
+          "error": "Not Found",
+          "path": "/anzeigen/s-anzeige-aufgeben.html"
+        },
+        "timestamp": "2026-02-04T10:27:27.586Z"
+      },
+      {
+        "service": "Avito",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.avito.ru/api/2/phone/verify/request",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 203,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.28.0</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a paddi...",
+        "timestamp": "2026-02-04T10:27:26.675Z"
+      },
+      {
+        "service": "Youla",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://youla.ru/web-api/auth/request_code",
+        "status": 512,
+        "statusText": "unknown status",
+        "success": false,
+        "duration": 2298,
+        "response": {
+          "error": "Авторизация по данному номеру не удалась"
+        },
+        "timestamp": "2026-02-04T10:27:28.770Z"
+      },
+      {
+        "service": "McDonald's",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.mcdonalds.com/api/v3/auth/otp/request",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 126,
+        "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<script type=\"text/javascript\"  src=\"/9gVEPA/QIqs52/N/5Vx/11K8qIkwsl8/ELJYrwkSuutNQp/GgwNV3ll/N34wEi/dYB0gB\"></script></body></html>\n",
+        "timestamp": "2026-02-04T10:27:26.599Z"
+      },
+      {
+        "service": "Starbucks",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://app.starbucks.com/bff-api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 215,
+        "response": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" data-next-head=\"\"/><title data-next-head=\"\">404: Page not found: Starbucks Coffee Company: </title><meta content=\"404: Page not found: Starbucks Coffee Company: \" property=\"og:title\" data-next-head=\"\"/><meta content=\"https://www.starbucks.com\" property=\"og:url\" data-next-head=\"\"/><meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/><meta content=\"s...",
+        "timestamp": "2026-02-04T10:27:29.086Z"
+      },
+      {
+        "service": "Domino's",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://order.dominos.com/power/login/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 62,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:28.934Z"
+      },
+      {
+        "service": "Pizza Hut",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://www.pizzahut.com/api/auth/phone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 105,
+        "response": " ",
+        "timestamp": "2026-02-04T10:27:28.978Z"
+      },
+      {
+        "service": "ProtonMail",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://api.protonmail.ch/sms/code",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 301,
+        "response": {
+          "Code": 404,
+          "Error": "Path not found",
+          "Details": {}
+        },
+        "timestamp": "2026-02-04T10:27:29.175Z"
+      },
+      {
+        "service": "Tutanota",
+        "source": "international",
+        "category": "unknown",
+        "type": "sms",
+        "url": "https://mail.tutanota.com/rest/sys/verifyphone",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 387,
+        "response": "",
+        "timestamp": "2026-02-04T10:27:29.261Z"
+      },
+      {
+        "service": "Calltouch",
+        "source": "international",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://api.calltouch.ru/calls-service/RestAPI/requests/orders/register",
+        "status": 400,
+        "statusText": "Bad Request",
+        "success": false,
+        "duration": 1239,
+        "response": {
+          "meta": [],
+          "data": {
+            "type": "apiError",
+            "apiErrorData": {
+              "errorCode": 2,
+              "errorMessage": "Передача данных по API отключена в настройках проекта",
+              "errorDescription": null
+            },
+            "validationErrorData": null
+          }
+        },
+        "timestamp": "2026-02-04T10:27:30.115Z"
+      },
+      {
+        "service": "Carrot Quest",
+        "source": "international",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://api.carrotquest.io/v1/conversations",
+        "status": 404,
+        "statusText": "Not Found",
+        "success": false,
+        "duration": 816,
+        "response": {
+          "meta": {
+            "status": 404,
+            "error": "Error404",
+            "error_message": "Path '/conversations' not found"
+          },
+          "data": {}
+        },
+        "timestamp": "2026-02-04T10:27:29.692Z"
+      },
+      {
+        "service": "Mango Callback",
+        "source": "international",
+        "category": "unknown",
+        "type": "call",
+        "url": "https://app.mango-office.ru/vpbx/callback/request",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "success": false,
+        "duration": 629,
+        "response": {
+          "name": "Unauthorized",
+          "message": "Your request was made with invalid credentials.",
+          "code": 0,
+          "status": 401
+        },
+        "timestamp": "2026-02-04T10:27:29.506Z"
+      }
+    ]
+  }
+}

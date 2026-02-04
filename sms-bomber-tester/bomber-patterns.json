@@ -1,0 +1,658 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-02-04T10:00:52.892Z",
+  "knownOtpSenders": [
+    "ABANK",
+    "ALLO",
+    "APTEKA24",
+    "ATB",
+    "BOLT",
+    "BUSFOR",
+    "CITRUS",
+    "COMFY",
+    "DIIA",
+    "DJINNI",
+    "DOCUA",
+    "DOMRIA",
+    "DTEK",
+    "EASYPAY",
+    "EPICENTR",
+    "FOXTROT",
+    "FOZZY",
+    "GLOVO",
+    "HELSI",
+    "HOTLINE",
+    "IPAY",
+    "IZIBANK",
+    "JUSTIN",
+    "KASTA",
+    "KYIVGAZ",
+    "KYIVSTAR",
+    "LIFECELL",
+    "LUN",
+    "MCDONALDSUA",
+    "MEEST",
+    "MEGOGO",
+    "MONOBANK",
+    "MOYO",
+    "NOVAPOSHTA",
+    "OLLTV",
+    "OLX",
+    "OSCHADBANK",
+    "PORTMONE",
+    "PRIVATBANK",
+    "PROIZD",
+    "PROM",
+    "PUMB",
+    "RABOTAUA",
+    "RAIFFEISEN",
+    "RAKETA",
+    "ROZETKA",
+    "SENSE",
+    "SILPO",
+    "SPORTBANK",
+    "SWEETTV",
+    "TABLETKI",
+    "TICKETSUA",
+    "UKLON",
+    "VODAFONEUA",
+    "WORKUA"
+  ],
+  "otpPatterns": [
+    {
+      "name": "Ukrainian OTP",
+      "pattern": "/(?:Ваш код|Код підтвердження|Код верифікації)[\\s:]+(\\d{4,8})/i"
+    },
+    {
+      "name": "English OTP",
+      "pattern": "/(?:Your code|Verification code|OTP|PIN)[\\s:]+(\\d{4,8})/i"
+    },
+    {
+      "name": "Code only",
+      "pattern": "/^\\d{4,8}$/"
+    },
+    {
+      "name": "Link + Code",
+      "pattern": "/(?:code|код)[\\s:]+(\\d{4,8}).*(?:https?:\\/\\/)/i"
+    },
+    {
+      "name": "Expiry mention",
+      "pattern": "/(\\d{4,8}).*(?:дійсний|valid|expires|минут)/i"
+    }
+  ],
+  "serviceEndpoints": [
+    {
+      "domain": "helsi.me",
+      "endpoints": [
+        {
+          "name": "Helsi",
+          "path": "/api/healthy/v2/accounts/send",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "xl-catalog-api.rozetka.com.ua",
+      "endpoints": [
+        {
+          "name": "Rozetka",
+          "path": "/v2/registration/request",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.novaposhta.ua",
+      "endpoints": [
+        {
+          "name": "Novaposhta",
+          "path": "/v2.0/json/",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.olx.ua",
+      "endpoints": [
+        {
+          "name": "OLX",
+          "path": "/api/open/oauth/phone-auth/",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "prom.ua",
+      "endpoints": [
+        {
+          "name": "Prom",
+          "path": "/api/v1/auth/phone/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "kasta.ua",
+      "endpoints": [
+        {
+          "name": "Kasta",
+          "path": "/api/v2/auth/phone/request",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "allo.ua",
+      "endpoints": [
+        {
+          "name": "Allo",
+          "path": "/ua/customer/account/sendcode/",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.foxtrot.com.ua",
+      "endpoints": [
+        {
+          "name": "Foxtrot",
+          "path": "/api/v2/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "comfy.ua",
+      "endpoints": [
+        {
+          "name": "Comfy",
+          "path": "/api/auth/phone/request",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.moyo.ua",
+      "endpoints": [
+        {
+          "name": "Moyo",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.citrus.ua",
+      "endpoints": [
+        {
+          "name": "Citrus",
+          "path": "/v2/auth/phone/code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "epicentrk.ua",
+      "endpoints": [
+        {
+          "name": "Epicentr",
+          "path": "/api/auth/sms/send",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "hotline.ua",
+      "endpoints": [
+        {
+          "name": "Hotline",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.monobank.ua",
+      "endpoints": [
+        {
+          "name": "Monobank",
+          "path": "/personal/auth/request",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "otp.privatbank.ua",
+      "endpoints": [
+        {
+          "name": "PrivatBank",
+          "path": "/api/v1/otp/send",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "online.raiffeisen.ua",
+      "endpoints": [
+        {
+          "name": "Raiffeisen",
+          "path": "/api/auth/send-otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "online.pumb.ua",
+      "endpoints": [
+        {
+          "name": "PUMB",
+          "path": "/api/auth/otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "online.oschadbank.ua",
+      "endpoints": [
+        {
+          "name": "Oschadbank",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "a-bank.com.ua",
+      "endpoints": [
+        {
+          "name": "ABank",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "sense.alfabank.ua",
+      "endpoints": [
+        {
+          "name": "Sense",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "sportbank.ua",
+      "endpoints": [
+        {
+          "name": "Sportbank",
+          "path": "/api/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "izibank.com.ua",
+      "endpoints": [
+        {
+          "name": "Izibank",
+          "path": "/api/auth/otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.uklon.com.ua",
+      "endpoints": [
+        {
+          "name": "Uklon",
+          "path": "/api/v1/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "node.bolt.eu",
+      "endpoints": [
+        {
+          "name": "Bolt",
+          "path": "/user/v1/phone/requestPhoneConfirmation",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.glovoapp.com",
+      "endpoints": [
+        {
+          "name": "Glovo",
+          "path": "/v3/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.raketa.app",
+      "endpoints": [
+        {
+          "name": "Raketa",
+          "path": "/api/v3/auth/request-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.meest.com",
+      "endpoints": [
+        {
+          "name": "Meest",
+          "path": "/v2/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.justin.ua",
+      "endpoints": [
+        {
+          "name": "Justin",
+          "path": "/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "ua.mcdonalds.com",
+      "endpoints": [
+        {
+          "name": "McDonald's UA",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "silpo.ua",
+      "endpoints": [
+        {
+          "name": "Silpo",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "fozzy.ua",
+      "endpoints": [
+        {
+          "name": "Fozzy",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "atbmarket.com",
+      "endpoints": [
+        {
+          "name": "ATB",
+          "path": "/api/auth/otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "doc.ua",
+      "endpoints": [
+        {
+          "name": "Doc.ua",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.apteka24.ua",
+      "endpoints": [
+        {
+          "name": "Apteka24",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "tabletki.ua",
+      "endpoints": [
+        {
+          "name": "Tabletki",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.lun.ua",
+      "endpoints": [
+        {
+          "name": "Lun",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "dom.ria.com",
+      "endpoints": [
+        {
+          "name": "DomRia",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.work.ua",
+      "endpoints": [
+        {
+          "name": "Work.ua",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "rabota.ua",
+      "endpoints": [
+        {
+          "name": "Rabota.ua",
+          "path": "/api/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "djinni.co",
+      "endpoints": [
+        {
+          "name": "Djinni",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.megogo.net",
+      "endpoints": [
+        {
+          "name": "Megogo",
+          "path": "/v1/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "sweet.tv",
+      "endpoints": [
+        {
+          "name": "Sweet.tv",
+          "path": "/api/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "oll.tv",
+      "endpoints": [
+        {
+          "name": "Oll.tv",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.kyivstar.ua",
+      "endpoints": [
+        {
+          "name": "Kyivstar",
+          "path": "/auth/otp/send",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "my.vodafone.ua",
+      "endpoints": [
+        {
+          "name": "Vodafone UA",
+          "path": "/api/auth/otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "my.lifecell.ua",
+      "endpoints": [
+        {
+          "name": "Lifecell",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "api.diia.gov.ua",
+      "endpoints": [
+        {
+          "name": "Diia",
+          "path": "/api/v1/auth/send-otp",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "my.dtek.com",
+      "endpoints": [
+        {
+          "name": "DTEK",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "my.kyivgaz.ua",
+      "endpoints": [
+        {
+          "name": "Kyivgaz",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "tickets.ua",
+      "endpoints": [
+        {
+          "name": "Tickets.ua",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "proizd.ua",
+      "endpoints": [
+        {
+          "name": "Proizd",
+          "path": "/api/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "busfor.ua",
+      "endpoints": [
+        {
+          "name": "Busfor",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "www.portmone.com.ua",
+      "endpoints": [
+        {
+          "name": "Portmone",
+          "path": "/api/auth/sms",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "easypay.ua",
+      "endpoints": [
+        {
+          "name": "EasyPay",
+          "path": "/api/auth/phone",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "domain": "ipay.ua",
+      "endpoints": [
+        {
+          "name": "iPay",
+          "path": "/api/auth/send-code",
+          "method": "POST"
+        }
+      ]
+    }
+  ],
+  "detectionThresholds": {
+    "burstCount": 5,
+    "burstWindowMs": 60000,
+    "minUniqueSenders": 3
+  },
+  "categories": [
+    "ecommerce",
+    "banking",
+    "logistics",
+    "taxi",
+    "delivery",
+    "food",
+    "healthcare",
+    "realestate",
+    "jobs",
+    "media",
+    "telecom",
+    "messenger",
+    "government",
+    "utilities",
+    "travel",
+    "payments"
+  ]
+}
