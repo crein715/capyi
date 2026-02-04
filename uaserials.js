@@ -525,16 +525,22 @@
     }
 
     function startPlugin() {
-        if (window.uaserials_plugin_ready) return;
+        if (window.uaserials_plugin_ready) {
+            console.log('UASerials: already loaded');
+            return;
+        }
         window.uaserials_plugin_ready = true;
+        console.log('UASerials: starting plugin');
 
         loadCryptoJS(function () {
+            console.log('UASerials: CryptoJS loaded');
             Lampa.Component.add('online_mod_uaserials', component);
 
             Lampa.Listener.follow('full', function (e) {
+                console.log('UASerials: full event', e.type);
                 if (e.type == 'complite') {
                     var btn = $(
-                        '<div class="full-start__button selector view--online_mod_uaserials" data-subtitle="Онлайн">' +
+                        '<div class="full-start__button selector view--online_mod_uaserials" data-subtitle="UASerials">' +
                         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:1.3em;height:1.3em">' +
                         '<path d="M8 5v14l11-7z"/>' +
                         '</svg>' +
@@ -559,9 +565,11 @@
 
                     var render = e.object.activity.render();
                     var buttonsContainer = render.find('.full-start__buttons');
+                    console.log('UASerials: buttons container found:', buttonsContainer.length);
                     
                     if (buttonsContainer.length) {
                         buttonsContainer.prepend(btn);
+                        console.log('UASerials: button added');
                     }
                 }
             });
@@ -581,9 +589,11 @@
         });
     }
 
+    console.log('UASerials: script loaded, appready:', window.appready);
     if (window.appready) startPlugin();
     else {
         Lampa.Listener.follow('app', function (e) {
+            console.log('UASerials: app event', e.type);
             if (e.type == 'ready') startPlugin();
         });
     }
