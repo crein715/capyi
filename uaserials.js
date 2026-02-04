@@ -266,6 +266,18 @@
                 }
             }
 
+            function decodeTortugaUrl(encoded) {
+                try {
+                    var cleaned = encoded.replace(/=+$/, '');
+                    var decoded = atob(cleaned);
+                    var reversed = decoded.split('').reverse().join('');
+                    if (reversed.startsWith('http')) {
+                        return reversed;
+                    }
+                } catch (e) {}
+                return null;
+            }
+
             function playVideo(a, item) {
                 Lampa.Modal.open({
                     title: '',
@@ -276,40 +288,43 @@
                     }
                 });
 
+                var startPlayer = function(videoUrl) {
+                    var title_full = select_title;
+                    if (a.season) title_full += ' S' + a.season;
+                    if (a.episode) title_full += 'E' + a.episode;
+                    if (a.voice) title_full += ' (' + a.voice + ')';
+
+                    Lampa.Player.play({
+                        title: title_full,
+                        url: videoUrl
+                    });
+                    Lampa.Player.playlist([{
+                        title: title_full,
+                        url: videoUrl
+                    }]);
+                };
+
+                if (a.url && a.url.indexOf('.m3u8') !== -1) {
+                    Lampa.Modal.close();
+                    startPlayer(a.url);
+                    return;
+                }
+
                 network.clear();
                 network.timeout(20000);
                 network.silent(proxyUrl(a.url), function (str) {
                     Lampa.Modal.close();
 
-                    var m = str.match(/file\s*:\s*["']([^"']+)["']/);
-                    if (m && m[1]) {
-                        var url = m[1];
+                    var fileMatch = str.match(/file\s*:\s*["']([^"']+)["']/);
+                    if (fileMatch && fileMatch[1]) {
+                        var url = fileMatch[1];
 
                         if (!url.startsWith('http')) {
-                            try {
-                                var decoded = atob(url.replace(/=+$/, ''));
-                                url = decoded.split('').reverse().join('');
-                            } catch (e) {
-                                Lampa.Noty.show('Помилка декодування URL');
-                                Lampa.Controller.toggle('content');
-                                return;
-                            }
+                            url = decodeTortugaUrl(url);
                         }
 
                         if (url && url.startsWith('http')) {
-                            var title_full = select_title;
-                            if (a.season) title_full += ' S' + a.season;
-                            if (a.episode) title_full += 'E' + a.episode;
-                            if (a.voice) title_full += ' (' + a.voice + ')';
-
-                            Lampa.Player.play({
-                                title: title_full,
-                                url: url
-                            });
-                            Lampa.Player.playlist([{
-                                title: title_full,
-                                url: url
-                            }]);
+                            startPlayer(url);
                         } else {
                             Lampa.Noty.show('URL відео невірний');
                             Lampa.Controller.toggle('content');
@@ -318,9 +333,9 @@
                         Lampa.Noty.show('Відео не знайдено');
                         Lampa.Controller.toggle('content');
                     }
-                }, function () {
+                }, function (err) {
                     Lampa.Modal.close();
-                    Lampa.Noty.show('Помилка завантаження відео');
+                    Lampa.Noty.show('Помилка: ' + (err.status || 'невідома'));
                     Lampa.Controller.toggle('content');
                 }, false, { dataType: 'text' });
             }

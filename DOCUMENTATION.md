@@ -270,26 +270,54 @@ HAR покаже всі запити включаючи API endpoints та по�
 
 ### Структура tortuga.tw URLs
 
-Розшифровані дані містять посилання типу `tortuga.tw/vod/{ID}`. Ці сторінки потребують JavaScript для резолвінгу.
+Розшифровані дані містять посилання типу `tortuga.tw/vod/{ID}`. 
+
+**Як працює tortuga.tw**:
+
+1. Сторінка `https://tortuga.tw/vod/42769` містить плеєр TortugaCore
+2. Параметр `file` містить закодований URL:
+```javascript
+new TortugaCore({
+    file: "OHUzbS54ZWRuaS9zbGgvOTY3MjRfb3ZtLmljLjIwZTIwcy5zcmVkbmlsYi55a2FlcC9zbGFpcmVzL3NsaC93dC5hZ3V0cm90Lm9zcHlsYWMvLzpzcHR0aA====",
+    ...
+});
+```
+
+**Алгоритм декодування**:
+```javascript
+function decodeTortugaUrl(encoded) {
+    // 1. Видалити зайві =
+    var cleaned = encoded.replace(/=+$/, '');
+    // 2. Base64 decode
+    var decoded = atob(cleaned);
+    // 3. Перевернути рядок
+    var reversed = decoded.split('').reverse().join('');
+    return reversed;
+}
+
+// Результат: https://calypso.tortuga.tw/hls/serials/peaky.blinders.s02e02.ci.mvo_42769/hls/index.m3u8
+```
 
 **Реальний m3u8 URL**:
 ```
-https://calypso.tortuga.tw/content/stream/{type}/{filename}/hls/{quality}/index.m3u8
+https://calypso.tortuga.tw/hls/serials/{show}.s{season}e{episode}.{voice}_{vod_id}/hls/index.m3u8
 ```
 
 Приклад:
 ```
-https://calypso.tortuga.tw/content/stream/serials/peaky.blinders.s01e01.ci.mvo_103079/hls/1080/index.m3u8
+https://calypso.tortuga.tw/hls/serials/peaky.blinders.s02e02.ci.mvo_42769/hls/index.m3u8
 ```
 
-Структура filename:
-- `peaky.blinders` — slug серіалу (транслітерація)
-- `s01e01` — сезон та епізод
-- `ci` — кодек/якість
-- `mvo` — тип озвучки
-- `103079` — VOD ID
+**Для плагіна**: 
+1. Отримати HTML сторінки `tortuga.tw/vod/{id}` через CORS проксі
+2. Витягнути параметр `file` з TortugaCore конфігурації
+3. Декодувати URL (base64 → reverse)
+4. Відтворити m3u8
 
-**Важливо**: Mapping від VOD ID до повного шляху недоступний через простий HTTP запит. Потрібен headless browser або серверний проксі.
+**Можливі проблеми**:
+- CORS проксі може повертати 404 для деяких tortuga.tw сторінок
+- Деякі регіони можуть бути заблоковані
+- calypso.tortuga.tw може вимагати певні headers (Referer)
 
 ## Контакти
 
