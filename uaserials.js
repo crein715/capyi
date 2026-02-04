@@ -537,7 +537,7 @@
             Lampa.Component.add('online_mod_uaserials', component);
 
             Lampa.Listener.follow('full', function (e) {
-                console.log('UASerials: full event', e.type);
+                console.log('[UASerials: full event]', e.type);
                 if (e.type == 'complite') {
                     var btn = $(
                         '<div class="full-start__button selector view--online_mod_uaserials" data-subtitle="UASerials">' +
@@ -563,13 +563,32 @@
                         });
                     });
 
-                    var render = e.object.activity.render();
+                    var render = e.data.render;
+                    console.log('[UASerials: render]', render);
+                    
                     var buttonsContainer = render.find('.full-start__buttons');
-                    console.log('UASerials: buttons container found:', buttonsContainer.length);
+                    if (!buttonsContainer.length) {
+                        buttonsContainer = render.find('.button--container');
+                    }
+                    if (!buttonsContainer.length) {
+                        buttonsContainer = $('.full-start__buttons');
+                    }
+                    if (!buttonsContainer.length) {
+                        buttonsContainer = $('.full-start').find('.buttons');
+                    }
+                    
+                    console.log('[UASerials: buttons container found:]', buttonsContainer.length);
                     
                     if (buttonsContainer.length) {
                         buttonsContainer.prepend(btn);
-                        console.log('UASerials: button added');
+                        console.log('[UASerials: button added]');
+                    } else {
+                        console.log('[UASerials: trying global search]');
+                        var globalBtns = $('.full-start__buttons');
+                        console.log('[UASerials: global buttons:]', globalBtns.length);
+                        if (globalBtns.length) {
+                            globalBtns.first().prepend(btn);
+                        }
                     }
                 }
             });
