@@ -563,32 +563,32 @@
                         });
                     });
 
-                    var render = e.data.render;
-                    console.log('[UASerials: render]', render);
+                    console.log('[UASerials: e.data keys]', Object.keys(e.data || {}));
+                    console.log('[UASerials: e.object]', e.object ? 'exists' : 'null');
                     
-                    var buttonsContainer = render.find('.full-start__buttons');
-                    if (!buttonsContainer.length) {
-                        buttonsContainer = render.find('.button--container');
+                    var buttonsContainer;
+                    
+                    if (e.data && e.data.render) {
+                        buttonsContainer = e.data.render.find('.full-start__buttons');
+                        console.log('[UASerials: from e.data.render]', buttonsContainer.length);
                     }
-                    if (!buttonsContainer.length) {
+                    
+                    if ((!buttonsContainer || !buttonsContainer.length) && e.object && e.object.activity) {
+                        var render = e.object.activity.render();
+                        buttonsContainer = render.find('.full-start__buttons');
+                        console.log('[UASerials: from e.object.activity.render]', buttonsContainer.length);
+                    }
+                    
+                    if (!buttonsContainer || !buttonsContainer.length) {
                         buttonsContainer = $('.full-start__buttons');
-                    }
-                    if (!buttonsContainer.length) {
-                        buttonsContainer = $('.full-start').find('.buttons');
+                        console.log('[UASerials: from global $]', buttonsContainer.length);
                     }
                     
-                    console.log('[UASerials: buttons container found:]', buttonsContainer.length);
+                    console.log('[UASerials: final buttons container]', buttonsContainer ? buttonsContainer.length : 0);
                     
-                    if (buttonsContainer.length) {
-                        buttonsContainer.prepend(btn);
-                        console.log('[UASerials: button added]');
-                    } else {
-                        console.log('[UASerials: trying global search]');
-                        var globalBtns = $('.full-start__buttons');
-                        console.log('[UASerials: global buttons:]', globalBtns.length);
-                        if (globalBtns.length) {
-                            globalBtns.first().prepend(btn);
-                        }
+                    if (buttonsContainer && buttonsContainer.length) {
+                        buttonsContainer.first().prepend(btn);
+                        console.log('[UASerials: button added!]');
                     }
                 }
             });
