@@ -560,15 +560,7 @@
                     var render = e.object.activity.render();
                     var buttonsContainer = render.find('.full-start__buttons');
                     
-                    var iconButtons = buttonsContainer.children().filter(function() {
-                        var $this = $(this);
-                        var span = $this.find('span');
-                        return span.length === 0 || span.text().trim() === '';
-                    });
-                    
-                    if (iconButtons.length) {
-                        iconButtons.last().after(btn);
-                    } else {
+                    if (buttonsContainer.length) {
                         buttonsContainer.prepend(btn);
                     }
                 }
